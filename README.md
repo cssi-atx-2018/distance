@@ -1,1 +1,3 @@
-# team distance, aka the best team wow so this is cool..
+
+# Team DISTANCE, aka the best team.
+
