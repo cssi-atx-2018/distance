@@ -1,1 +1,1 @@
-# team distance, aka the best team
+# Team DISTANCE, aka the best team.
