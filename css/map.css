@@ -1,0 +1,12 @@
+body { background-color: #30303d; color: #fff; }
+#chartdiv {
+  width: 60vw;
+  height:80vh;
+  text-align: center;
+}
+
+#mapholder{
+  text-align: center;
+  display:flex;
+  justify-content: center;
+}
