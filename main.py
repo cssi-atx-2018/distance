@@ -13,7 +13,7 @@ class MainHandler(webapp2.RequestHandler):
 
 class MapPage(webapp2.RequestHandler):
     def get(self):
-        template=template_env.get_template('html/map.html')
+        template=template_env.get_template('html/mapPage/map.html')
         self.response.write(template.render())
 
 app = webapp2.WSGIApplication([
