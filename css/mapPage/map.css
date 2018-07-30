@@ -1,8 +1,17 @@
+#slider {
+
+  height: 0%;
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+    background-color: black;
+    -webkit-transition: height .3s ease;
+    transition: height .3s ease;
+}
 body { background-color: #30303d; color: #fff; }
 #chartdiv {
   width: 60vw;
   height:80vh;
-  text-align: center;
 }
 
 #mapholder{
