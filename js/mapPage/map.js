@@ -65,6 +65,7 @@ var country = document.getElementById("country");
 var lang = document.getElementById("lang");
 var curr = document.getElementById("curr");
 var info = document.getElementById("info");
+var input = document.getElementById("country_name");
 
 //Switch to chosen country
 function switchToCountry(id){
@@ -145,7 +146,7 @@ function switchToCountry(id){
     lang.innerText = "Language: "+currentCountry["language"];
     curr.innerText = "Currency: "+currentCountry["currency"];
     info.innerText = currentCountry["info"];
-
+    input.value = currentCountry["name"];
     console.log("Switching to "+currentCountry.area["name"]);
 
     //Move slider up from bottom

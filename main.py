@@ -21,7 +21,7 @@ class Countries(webapp2.RequestHandler):
         self.response.write("This page is not working yet");
     def post(self):
         country_name = self.request.get("country_name")
-        self.response.write(country_name)
+        self.response.write("This is the page for "+country_name)
 
 app = webapp2.WSGIApplication([
     ('/map', MapPage),  #Main map page
