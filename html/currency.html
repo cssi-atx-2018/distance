@@ -6,7 +6,24 @@
 </head>
 
 <body>
-
+  <div id="currency_div">
+  <form method=POST>
+    <select name="curr1">
+      {% for number, currency in currencies.items() %}
+        <option value={{number}}>{{currency}}</option>
+      {% endfor %}
+    </select>
+    <input type="number" name="amount1" id="amount1" value={{amt1}}>
+    to
+    <select name="curr2">
+      {% for number, currency in currencies.items() %}
+        <option value={{number}}>{{currency}}</option>
+      {% endfor %}
+    </select>
+    <input type="number" name="amount2" id="amount2" value={{amt2}}>
+    <input type="submit" id="submit" value="Convert!">
+  </form>
+</div>
 </body>
 
 <script src="../js/currency.js"></script>
