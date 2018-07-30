@@ -4,6 +4,29 @@
 <link rel="stylesheet" href="../css/mapPage/map.css" type="text/css" media="all" />
 <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="map.html">Home</a>
+  <a href="#">About</a>
+  <a href="#">Currency</a>
+  <a href="#">Suggestions</a>
+</div>
+
+<span onclick="openNav()"><img src = "hamburger.png" height = 42 width = 42></span>
+
+<head>
+  <h1> GlobeNotes </h1>
+  <h2> <b> We make navigating international travel easy.</b> From being aware of cultural differences <br>
+    to figuring out what adapter you need to bring, there are many things to keep in mind <br>
+    while planning a trip to another country. GlobeNotes has the essential information you <br> need to travel well in a clean,
+    organized, and interactive format. Explore by clicking on <br> the menu on the top left of this page or clicking on a country
+    on the map.
+   </h2>
+</head>
+
+
+
+
 <body>
   <div style:"width:30vw"id="countryDialog">
 
@@ -15,12 +38,11 @@
 
   <div id="sliderholder">
     <div id="slider">
-      <h1 id="country" style="font-family: Actor; margin:5px;">COUNTRY</h1>
-      <div id = "lang_curr" style="display:flex; justify-content:flex-start;margin:5px">
-        <h6 id="lang" style="font-family: Actor;padding-right:50px;margin:0;">LANGUAGE</h6>
-        <h6 id="curr"style="font-family: Actor;margin:0;">CURRENCY</h6>
-      </div>
-      <p id="info" style="font-family: Actor;margin:5px;">INFO HERE</p>
+      <h7 style="text-align:center;padding-left:97%;padding-top:1%;font-size:25px;" onClick="window.location.reload()">x</h7>
+      <h3 id="country" style="margin:5px;">COUNTRY</h1>
+        <h6 id="lang" style="margin:20px;">LANGUAGE</h6>
+        <h6 id="curr"style="margin:20px;">CURRENCY</h6>
+      <p id="info" style="margin:20px;">INFO HERE</p>
       <form method=POST action="/country_details">
         <input type="text" name="country_name" id="country_name" style="display:none">
         <input type="submit" id="see_more" value="View full info">
