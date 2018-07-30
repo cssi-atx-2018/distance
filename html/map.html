@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<link rel="stylesheet" href="../css/mapPage/map.css" type="text/css" media="all" />
+<link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+
+<body>
+  <div style:"width:30vw"id="countryDialog">
+
+  </div>
+
+  <div id="mapholder">
+    <div id="chartdiv"></div>
+  </div>
+
+  <div id="sliderholder">
+    <div id="slider">
+      <h1 id="country" style="font-family: Actor; margin:5px;">COUNTRY</h1>
+      <div id = "lang_curr" style="display:flex; justify-content:flex-start;margin:5px">
+        <h6 id="lang" style="font-family: Actor;padding-right:50px;margin:0;">LANGUAGE</h6>
+        <h6 id="curr"style="font-family: Actor;margin:0;">CURRENCY</h6>
+      </div>
+      <p id="info" style="font-family: Actor;margin:5px;">INFO HERE</p>
+      <form method=POST action="/country_details">
+        <input type="text" id="country_name" class= "country_name" style="display:block">
+        <input type="submit" id="see_more" value="View full info">
+      </form>
+    </div>
+  </div>
+
+</body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../js/mapPage/ammap.js"></script>
+<script src="../js/mapPage/worldLow.js"></script>
+<script src="../js/mapPage/dark.js"></script>
+<script src="../js/mapPage/map.js"></script>
+
+</html>
