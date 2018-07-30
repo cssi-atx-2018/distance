@@ -1,0 +1,84 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+   display: grid;
+   grid-gap: 25px;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 1fr;
+   margin: 40px;
+   margin-top: 50px;
+   justify-content: center;
+   /* background-color: gray; */
+ }
+
+body
+{
+  background: #7dcbd4;
+  font-size: 18px;
+}
+h2 {
+  font-size: 16px;
+}
+.postcard {
+  background-image: url("land.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 30px;
+  width: 75vw;
+  height: 75vh;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.postcard-body{
+  padding: 2%;
+}
+
+/* .postcard-header{
+  background: gray;
+  width: 75vw;
+  height: 15vh;
+  margin: auto;
+  position: absolute;
+  top: auto;
+  left: auto;
+  padding: 0.1%;
+
+} */
+input {
+  font-size: 18px;
+}
+.body-left {
+  background: #a5f6ff;
+  float: left;
+  width: 60%;
+  height: 100%;
+  padding: 1%;
+}
+
+img {
+  float: right;
+}
+
+.body-right {
+  float: right;
+  background: #a5f6ff;
+  width: 35%;
+  height: 70%;
+  padding: 1%;
+}
+
+.msg-box {
+  width: 80vw;
+}
