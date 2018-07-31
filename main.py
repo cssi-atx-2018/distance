@@ -28,7 +28,7 @@ class Countries(webapp2.RequestHandler):
         country_name = self.request.get("country_name")
         test = return_country(country_name)
         logging.info(str(test)+" "+str(type(test)))
-        self.response.write(template.render({"country_name":test.get_info()}))
+        self.response.write(template.render(test.get_info()))
 
 class Currency(webapp2.RequestHandler):
     """ Currency convertion page, uses currency api from apilayer
