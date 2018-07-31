@@ -53,7 +53,7 @@ p {
 }
 
 .postcard-body{
-  padding: 2%;
+  padding-top: 10%;
 
   grid-template: none;
   display: grid;
@@ -85,9 +85,7 @@ input {
   padding: 1.1%;
 }
 
-img {
-  float: right;
-}
+
 
 .body-right {
   float: right;
