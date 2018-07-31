@@ -2,11 +2,13 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="../css/countryPage/country.css">
 </head>
 
 <body>
   <h1>{{name}}</h1>
+  <div class="for-row-layout">
 <div class="biggestdiv">
 <div class="left">
   <h2>General Country Info</h2>
@@ -80,7 +82,7 @@
   {{value}}<br>
   {% endfor %}
   </div>
-
+<br>
   <div class="info">
   <p class="bigtext">Travel Regulations:</p>
   {% for value in regulations %}
@@ -92,8 +94,10 @@
 </div> <!-- end right-->
 
 </div>
-<div class="mapsdiv">
-
+<div class="mapsdiv" style="background-color:blue">
+<br>
+<br>
+</div>
 </div>
 </body>
 </html>
