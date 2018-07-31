@@ -1,35 +1,54 @@
 .big-div-energy{
-display: grid;
+display: flex;
 grid-template-rows: 22vh 0.5vh 22vh 0.5vh 22vh;
 grid-template-columns: 12vw 12vw;
 grid-gap: 0.7%;
+min-width: 300px;
+justify-content: space-around;
+flex-wrap: wrap;
 }
 
 .big-div-energy2{
-display: grid;
+display: flex;
 grid-template-rows: 22vh 0.5vh 22vh;
 grid-template-columns: 12vw 12vw;
-grid-gap: 0.8%;
-
+grid-gap: 0.7%;
+min-width: 300px;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.for-row-layout{
+  display:flex;
+  flex-direction: row;
 
 }
-
 .biggestdiv{
   display: grid;
   grid-template-columns: 35% 35%;
   grid-gap: 3%;
-  margin: 1%;
+  margin: 0;
   width: 80vw;
   font-size: 15px;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .info{
+  flex: 1;
   background: #607779;
   color: white;
   padding: 1%;
   text-align: center;
+  min-width: 138px;
+  min-height: 151px;
+  margin: 5px;
 }
 .mapsdiv{
+  position:absolute;
+  margin-right:1px;
+  width: 30%;
+  height: 90%;
   background: blue;
 }
 
