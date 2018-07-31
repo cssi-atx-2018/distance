@@ -1,0 +1,177 @@
+.big-div-energy{
+display: grid;
+grid-template-rows: 22vh 0.5vh 22vh 0.5vh 22vh;
+grid-template-columns: 12vw 12vw;
+grid-gap: 0.7%;
+}
+
+.big-div-energy2{
+display: grid;
+grid-template-rows: 22vh 0.5vh 22vh;
+grid-template-columns: 12vw 12vw;
+grid-gap: 0.8%;
+
+
+}
+
+.biggestdiv{
+  display: grid;
+  grid-template-columns: 35% 35%;
+  grid-gap: 3%;
+  margin: 1%;
+  width: 80vw;
+  font-size: 15px;
+}
+
+.info{
+  background: #607779;
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+.mapsdiv{
+  background: blue;
+}
+
+h1 {
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+font-size: 40px;
+   font-weight: 500;
+   color: black;
+}
+
+.bigtext{
+  color: #00e6f2;
+}
+
+h2 {
+  text-align: left;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 400;
+   font-size: 40px;
+   color: black;
+}
+
+.container {
+   display: grid;
+   grid-gap: 25px;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 1fr;
+   margin: 40px;
+   margin-top: 50px;
+   justify-content: center;
+   /* background-color: gray; */
+ }
+
+body
+{
+  background: #7dcbd4;
+  font-style: normal;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+}
+h2 {
+  font-size: 16px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.postcard {
+  background-image: url("../png/land.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 30px;
+  width: 75vw;
+  height: 75vh;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-45%);
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+p {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.postcard-body{
+  padding: 2%;
+
+  grid-template: none;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 72vw 50vw;
+  grid-template-rows: 94.5vh;
+
+}
+
+/* .postcard-header{
+  background: gray;
+  width: 75vw;
+  height: 15vh;
+  margin: auto;
+  position: absolute;
+  top: auto;
+  left: auto;
+  padding: 0.1%;
+
+} */
+input {
+  font-size: 18px;
+}
+/* .left {
+  background: #a5f6ff;
+  float: left;
+  width: 50%;
+  height: 70%;
+  padding: 1.1%;
+} */
+
+img {
+  float: right;
+}
+
+/* .right {
+  float: right;
+  background: #a5f6ff;
+  width: 30%;
+  height: 70%;
+  padding: 1.1%;
+} */
+
+.msg-box {
+  width: 80vw;
+}
+
+.links {
+  width: 75vw;
+  height: 75vh;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-42%);
+  padding-left: 0%;
+  padding-right: 0%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+a {
+  color: white;
+  font-style: normal;
+}
+
+a:visited {
+  color: #a5f6ff;
+  font-style: normal;
+}
+
+a:hover {
+  color: #00efe7;
+  font-style: normal;
+}

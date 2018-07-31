@@ -25,7 +25,7 @@ israel = Country("Israel", ["Hebrew", "Arabic", "Russian"],[49, 18, 15],
     ["Jewish", "Muslim", "Christian"], [75, 18, 2], ["Jewish", "Arabic", "Other"], [75, 20, 5],
     "", "", ["Shekel", "H type plug", ["GMT+3"]],
     ["Passport Validity: No minimum, but your stay cannot exceed validity of passport and airlines may deny boarding if your passport has less than 6 months validity.",
-    "Blank Passport Pages: 1 page, normally aren’t stamped upon entry", "Tourist Visa: Only if staying longer than 90 days", "Vaccinations: None",
+    "Blank Passport Pages: 1 page, normally aren\'t stamped upon entry", "Tourist Visa: Only if staying longer than 90 days", "Vaccinations: None",
     "Currency Restrictions: ENTRY/EXIT: If leaving or arriving by air you must declare amounts above 50,000 shekels and 12,00 shekels if by you came by land."],
     "Parliamentary democracy")
 
