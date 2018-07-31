@@ -1,18 +1,15 @@
 #slider {
-
   height: 0%;
-    position: fixed;
-    bottom:0px;
-    width: 100%;
-    background-color: white;
-    -webkit-transition: height .3s ease;
-    transition: height .3s ease;
-    color: black;
-    font-family: Helvetica;
-    font-weight: lighter;
-    padding-bottom: 2%;
-
-
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  background-color: white;
+  -webkit-transition: height .3s ease;
+  transition: height .3s ease;
+  color: black;
+  font-family: Helvetica;
+  font-weight: lighter;
+  padding-bottom: 0%;
 }
 
 
