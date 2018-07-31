@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <title>Currency Conversion - GlobeNotes</title>
   <link rel="stylesheet" type="text/css" href="../css/currencyPage/currency.css">
+  <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <h1> Currency Converter </h1>
 </head>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="map">Home</a>
+  <a href="#">About</a>
+  <a href="currency">Currency</a>
+  <a href="suggestions">Suggestions</a>
+</div>
+
+<span onclick="openNav()"><img src = "../png/hamburger.png" height = 42 width = 42 align="left"></span>
+
+<h1> Currency Converter </h1>
 
 <body>
     <i class="fas fa-money-bill-alt"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <i class="fas fa-money-check-alt"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <i class="fas fa-money-bill-wave"></i>
+  <div id = "info">
   <h2> Figuring out how to convert currencies can be difficult, especially in the moment. We use the <a href = "https://fixer.io/"> Fixer API </a> with the most recent
     exchange rate information to make the process simple, streamlined, and fast for on-the-go travellers. To get started, pick a starting currency from the dropdown menu
   and the amount of money you would like to convert. Use the second dropdown menu to select your intended conversion currency and click "Convert!". To convert in the reverse
 order, simply click the arrow in the direction you would like to convert. <br> <br> Don't see a currency you need? Send us a <a href = "suggestionsfinal.html"> suggestion </a>
 and we'll make a change. </h2>
+</div>
+
   <div id="currency_div" style="text-align:center;">
   <form method=POST>
     <select name="curr1" id="curr1">
