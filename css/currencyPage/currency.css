@@ -1,13 +1,8 @@
 #currency_div{
-  /* display:flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap; */
   position:absolute;
+  width:100%;
   margin:auto;
   top:50%;
-  left:50%;
-  margin: -10px 0 0 -400px;
 }
 body{
   background-color: #7dcbd4;

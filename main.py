@@ -28,6 +28,9 @@ class Countries(webapp2.RequestHandler):
         self.response.write(template.render({"country_name":country_name}))
 
 class Currency(webapp2.RequestHandler):
+    """ Currency convertion page, uses currency api from apilayer
+        and converts number to another currency
+    """
     def getNames(self, original):
         # Our api url
         url = 'http://apilayer.net/api/list?access_key=26d090d35324a4b7dd821d34068f354d'
@@ -41,18 +44,25 @@ class Currency(webapp2.RequestHandler):
 
                 #Change result.content from string to dictuionary and get a meme dictionary
                 listDictionary = json.loads(result.content)
+
+                #Returns dictionary of currency ids and names
                 if original:
                     return listDictionary["currencies"]
                 currencies = {}
                 count = 0
 
+                #Returns dictionary of values and indexes
                 for value in listDictionary["currencies"].values():
                     currencies[count] = value
                     count+=1
                 return currencies
+        #Catch url not found errors
         except urlfetch.Error:
             logging.exception("Caught error")
+
     def getConversion(self):
+        """ Helper function to get a certain conversion rate
+        """
         url = "http://www.apilayer.net/api/live?access_key=26d090d35324a4b7dd821d34068f354d"
 
         try:
@@ -62,33 +72,58 @@ class Currency(webapp2.RequestHandler):
                 return listDictionary
         except urlfetch.Error:
             loggin.exception("Caught error")
+
     def get(self):
+        """ Original currency page, shows the currency template
+            with the names of each available currency
+        """
         template = template_env.get_template('html/currency.html')
         self.response.write(template.render({"currencies":self.getNames(False)}))
+
     def post(self):
+        """ Converts chosen currency amount to second currency
+        """
+        #Get initial data
         curr1 = self.request.get("curr1")
         curr2 = self.request.get("curr2")
         amount1 = self.request.get("amount1")
         all_currencies = self.getNames(True)
+
+        #Get names of chosen currencies
         from1 = all_currencies.keys()[int(curr1)]
         to1 = all_currencies.keys()[int(curr2)]
+
+        #Get both conversion factors
         convert_currencies1 = self.getConversion()["USD"+to1]
         convert_currencies2 = self.getConversion()["USD"+from1]
+        amount2 = 0
+
+        #Check that amount is valid
         if amount1 == "" or amount1 < 0:
-            return
-        amount2 = float(amount1)* float(convert_currencies1)
-        conversion = float(convert_currencies1)/float(convert_currencies2)
-        amount2 = float(amount1)*conversion
-        # for key,item in all_currencies.items():
-        #     if item == all_currencies[int(curr1)]:
-        #         convert_amt = key
-        # convert_amt = all_currencies[all_currencies[int(curr1)]]
+            amount1 = 0
+        else:
+            conversion = float(convert_currencies1)/float(convert_currencies2)
+            amount2 = float(amount1)*conversion
         template = template_env.get_template('html/currency.html')
-        logging.info(all_currencies)
-        self.response.write(template.render({"currencies":self.getNames(False), "amt2":amount2}))
+
+        #Log info
+        logging.info("CURRENCY INFO REQUEST from: "+from1+ " amt: "+str(amount1)+" to: "+to1+" amt: "+str(amount2))
+        #Send data to template
+        self.response.write(template.render({"currencies":self.getNames(False), "curr1":curr1, "curr2":curr2,"amt1":amount1, "amt2":amount2}))
+
+class Suggestions(webapp2.RequestHandler):
+    def get(self):
+        template = template_env.get_template('html/suggestions.html')
+        self.response.write(template.render())
+class Misc(webapp2.RequestHandler):
+    def get(self):
+        template = template_env.get_template('html/misc.html')
+        self.response.write(template.render())
 
 app = webapp2.WSGIApplication([
     ('/map', MapPage),  #Main map page
     ('/country_details', Countries), #Country details page
-    ('/currency', Currency)
+    ('/currency', Currency), #Currency converter page
+    ('/suggestions', Suggestions),
+    ('/misc', Misc),
 ], debug = True)

@@ -2,27 +2,34 @@
 <html>
 
 <head>
+  <title>Currency Conversion - GlobeNotes</title>
   <link rel="stylesheet" type="text/css" href="../css/currencyPage/currency.css">
 </head>
 
 <body>
-  <div id="currency_div">
+  <div id="currency_div" style="text-align:center;">
   <form method=POST>
-    <select name="curr1">
+    <select name="curr1" id="curr1">
       {% for number, currency in currencies.items() %}
         <option value={{number}}>{{currency}}</option>
       {% endfor %}
     </select>
     <input type="number" name="amount1" id="amount1" value={{amt1}}>
     to
-    <select name="curr2">
+    <select name="curr2" id="curr2">
       {% for number, currency in currencies.items() %}
         <option value={{number}}>{{currency}}</option>
       {% endfor %}
     </select>
-    <input type="number" name="amount2" id="amount2" value={{amt2}}>
+    <input type="number" name="amount2" id="amount2" value={{amt2}}><br>
     <input type="submit" id="submit" value="Convert!">
   </form>
+  <br>
+  <img src="../png/switch.png" style="cursor:pointer;" width="30px" id="switch" onclick="Switch()">
+</div>
+<div style="display:none">
+  <p id="currency1">{{curr1}}</p>
+  <p id="currency2">{{curr2}}</p>
 </div>
 </body>
 
