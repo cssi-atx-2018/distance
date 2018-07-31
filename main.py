@@ -5,6 +5,7 @@ import json
 from google.appengine.api import urlfetch
 import logging
 import jinja2
+from country import *
 
 #Creating variables for template loading
 template_loader = jinja2.FileSystemLoader(searchpath="./")
@@ -25,7 +26,9 @@ class Countries(webapp2.RequestHandler):
     def post(self):
         template = template_env.get_template('html/country.html')
         country_name = self.request.get("country_name")
-        self.response.write(template.render({"country_name":country_name}))
+        test = return_country(country_name)
+        logging.info(str(test)+" "+str(type(test)))
+        self.response.write(template.render({"country_name":test.get_info()}))
 
 class Currency(webapp2.RequestHandler):
     """ Currency convertion page, uses currency api from apilayer
