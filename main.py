@@ -129,11 +129,18 @@ class Misc(webapp2.RequestHandler):
         template = template_env.get_template('html/misc.html')
         self.response.write(template.render())
 
+class About(webapp2.RequestHandler):
+    def get(self):
+        template = template_env.get_template('html/about.html')
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/country_details', Countries), #Country details page
     ('/currency', Currency), #Currency converter page
     ('/suggestions', Suggestions),  #Suggestions form page
     ('/thankyou', ThankYou),
     ('/misc', Misc),    #Miscellaneous travel info page
+    ('/about.*', About), #page about us
     ('/.*', MapPage),  #Main map page
+
 ], debug = True)
