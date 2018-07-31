@@ -6,6 +6,94 @@
 </head>
 
 <body>
+  <h1>{{name}}</h1>
+<div class="biggestdiv">
+<div class="left">
+  <h2>General Country Info</h2>
+<div class="big-div-energy">
 
+  <div class="info">
+    <p class="bigtext">Language(s) spoken:</p>
+    {% for value in lang %}
+    {{value}}<br>
+    {% endfor %}
+  </div>
+
+  <div class="info">
+    <p class="bigtext">Major Religion(s):</p>
+    {% for value in relig %}
+    {{value}}<br>
+    {% endfor %}
+  </div>
+
+  <div class="empty"></div>
+  <div class="empty"></div>
+
+  <div class="info">
+    <p class="bigtext">Ethnic Groups:</p>
+    {% for value in eth %}
+    {{value}}<br>
+    {% endfor %}
+  </div>
+
+  <div class="info">
+    <p class="bigtext">Customs:</p>
+    {% for value in customs %}
+    {{value}}<br>
+    {% endfor %}
+  </div>
+  <div class="empty"></div>
+  <div class="empty"></div>
+
+  <div class="info">
+    <p class="bigtext">Cultural Taboos:</p>
+    {% for value in taboos %}
+    {{value}}<br>
+    {% endfor %}
+  </div>
+
+  <div class="info">
+    <p class="bigtext">More Stuff:</p>
+  </div>
+
+</div>
+</div> <!-- end left-->
+
+<div class="right">
+<h2>Things To Keep In Mind While Traveling</h2>
+
+<div class="big-div-energy2">
+  <div class="info">
+  <p class="bigtext">Currency:</p>{{curr_pow_time[0]}}
+  </div>
+
+  <div class="info">
+  <p class="bigtext">Power:</p>{{curr_pow_time[1]}}
+  </div>
+
+  <div class="empty"></div>
+  <div class="empty"></div>
+
+  <div class="info">
+  <p class="bigtext">Time Zone:</p>
+  {% for value in curr_pow_time[2] %}
+  {{value}}<br>
+  {% endfor %}
+  </div>
+
+  <div class="info">
+  <p class="bigtext">Travel Regulations:</p>
+  {% for value in regulations %}
+{{value}}<br>
+  {% endfor %}
+  </div>
+
+</div>
+</div> <!-- end right-->
+
+</div>
+<div class="mapsdiv">
+
+</div>
 </body>
 </html>
