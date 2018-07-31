@@ -6,4 +6,47 @@
 }
 body{
   background-color: #7dcbd4;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Actor', sans-serif;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  font-size: 55px;
+
+}
+
+h2{
+  font-family: Helvetica;
+  font-weight: lighter;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 1%;
+
+}
+
+i{
+  font-size: 50px;
+  text-align: center;
+}
+
+input[type=number] {
+    border: 2px solid black;
+    padding: 8px 16px;
+    margin: 4px 2px;
+    font-size: 15px;
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+select {
+  border: 2px solid black;
+  padding: 8px 16px;
+  margin: 4px 2px;
+  font-size: 15px;
+  font-family: Helvetica;
+  font-weight: lighter;
 }
