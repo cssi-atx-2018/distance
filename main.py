@@ -121,9 +121,9 @@ class Misc(webapp2.RequestHandler):
         self.response.write(template.render())
 
 app = webapp2.WSGIApplication([
-    ('/map', MapPage),  #Main map page
     ('/country_details', Countries), #Country details page
     ('/currency', Currency), #Currency converter page
-    ('/suggestions', Suggestions),
-    ('/misc', Misc),
+    ('/suggestions', Suggestions),  #Suggestions form page
+    ('/misc', Misc),    #Miscellaneous travel info page
+    ('/.*', MapPage),  #Main map page
 ], debug = True)
