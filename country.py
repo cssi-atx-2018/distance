@@ -49,6 +49,21 @@ mexico = Country("Mexico", ["Spanish"], [96],
     "Vaccinations: None", "Currency Restrictions:ENTRY/EXIT: $10,000"],
     "Federal Republic")
 
+china = Country("China", ["Mandarin"], [71], 
+    ["Chinese Folk Religion", "Buddhism", "Christianity"], [73.6, 15.9, 2.5], ["Han Chinese", "Zhuang", "Hui"], [91.6, 1.2, 0.8], 
+    "", "", ["Yuan", "220 V", ["GMT+8"]],
+    ["Passport Validity: 6 months", "Blank Passport Pages: 2 pages per stamp", "Tourist visa: Yes", "Vaccinations: None",
+    "Currency Restrictions:ENTRY/EXIT: Max RMB 20,000"], "Communist Government")
+
+southafrica = Country("South Africa", ["Zulu", "Xhosa", "Afrikaans", "English", "Northern Sotho"], [22.7,16,13,10,9],
+    ["Protestant", "No religion", "Catholic"], [73.2,14.9,7.4], ["Black African", "Coloured", "White", "Indian/Asian"], [80.2,8.8,8.4,2.5], 
+    "", "", ["Rand", "230v", "GMT+2"],
+    ["Passport Validity: 30 days", "Blank Passport Pages: 2 consecutive empty pages per entry",
+    "Tourist Visa: Required if visiting more than 90 days", "Vaccinations: Yellow Fever vaccine required at least 10 days before if travelling from certain countries",
+    "Currency restrictions: ENTRY: ZAR 25,000; Foreign currency unlimited if declared; No Kruger coins. Exit: ZAR 25,000; Foreign currency unlimited if amount was declared on entry; Up to 15 Kruger coins if proof purchased with foreign currency"],
+    "Parliamentary Democracy")
+
+
 def return_country(name):
     if name == "Mexico":
         return mexico
