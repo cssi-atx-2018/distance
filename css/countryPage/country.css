@@ -1,6 +1,6 @@
 .big-div-energy{
   display: flex;
-  grid-template-rows: 22vh 0.5vh 22vh 0.5vh 22vh;
+  grid-template-rows: 22vh 0.5vh 22vh;
   grid-template-columns: 12vw 12vw;
   grid-gap: 0.7%;
   min-width: 300px;
