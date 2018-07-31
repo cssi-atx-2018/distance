@@ -4,8 +4,20 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/suggestionsfinal.css">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <title>Suggestions - GlobeNotes</title>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="map">Home</a>
+      <a href="#">About</a>
+      <a href="currency">Currency</a>
+      <a href="suggestions">Suggestions</a>
+    </div>
+
+    <span onclick="openNav()"><img src = "../png/hamburger.png" height = 42 width = 42 align="left"></span>
 
   </head>
 
@@ -39,7 +51,7 @@
             <p>To:<br>GlobeNotes Team<br>Austin, TX<br></p>
             Name: <input type="text" name="name-input"><br><br>
             Your Email: <input type="text" name="email-input"><br><br>
-            <input type="submit" name="email-input" value="Submit postcard!" style="color: blue">
+            <input type="submit" name="email-input" value="Submit postcard!" style="color: black;">
 
 
           </div>
@@ -55,4 +67,6 @@
     <footer></footer>
 
   </body>
+
+  <script src="../js/suggestions.js"></script>
 </html>
