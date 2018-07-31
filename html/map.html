@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<title>Home - GlobeNotes</title>
+<link rel="stylesheet" href="../css/mapPage/map.css" type="text/css" media="all" />
+<link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="map">Home</a>
+  <a href="#">About</a>
+  <a href="currency">Currency</a>
+  <a href="suggestions">Suggestions</a>
+</div>
+
+<span onclick="openNav()"><img src = "../png/hamburger.png" height = 42 width = 42></span>
+
+<head>
+  <h1> GlobeNotes </h1>
+  <h2 style="padding-left:10%;padding-right:10%"> <b> We make navigating international travel easy.</b> From being aware of cultural differences
+    to figuring out what adapter you need to bring, there are many things to keep in mind while planning a trip to another country. GlobeNotes has the essential information you need to travel well in a clean,
+    organized, and interactive format. Explore by clicking on the menu on the top left of this page or clicking on a country on the map.
+   </h2>
+</head>
+
+
+
+
+<body>
+  <div style:"width:30vw"id="countryDialog">
+
+  </div>
+
+  <div id="mapholder">
+    <div id="chartdiv"></div>
+  </div>
+
+  <div id="sliderholder">
+    <div id="slider">
+      <div style="display:flex;flex-layout:row;justify-content:space-between;">
+      <h3></h3>
+      <h3 id="country" style="margin:0;padding:0;">COUNTRY</h1>
+      <h7 style="padding-right:3%;padding-top:1%;font-size:25px;cursor:pointer" onClick="hide_element()">x</h7>
+      </div>
+        <h6 id="lang" style="margin:20px;margin-top:5px">LANGUAGE</h6>
+        <h6 id="curr"style="margin:20px;margin-top:5px">CURRENCY</h6>
+      <p id="info" style="margin:20px;margin-top:5px">INFO HERE</p>
+      <form method=POST action="/country_details">
+        <input type="text" name="country_name" id="country_name" style="display:none">
+        <input type="submit" id="see_more" value="View full info">
+      </form>
+    </div>
+  </div>
+
+</body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../js/mapPage/ammap.js"></script>
+<script src="../js/mapPage/worldLow.js"></script>
+<script src="../js/mapPage/dark.js"></script>
+<script src="../js/mapPage/map.js"></script>
+
+</html>

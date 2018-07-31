@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/suggestionsfinal.css">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <title>Suggestions - GlobeNotes</title>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="map">Home</a>
+      <a href="#">About</a>
+      <a href="currency">Currency</a>
+      <a href="suggestions">Suggestions</a>
+    </div>
+
+    <span onclick="openNav()"><img src = "../png/hamburger.png" height = 42 width = 42></span>
+  </head>
+
+  <body>
+
+    <div class="main-content">
+      <h1>Send us a postcard!</h1>
+      <h2>If there are any content changes you would like us to implement to make our site more accurate and
+        even more awesome, just write to us below!</h2><br>
+    <header></header>
+
+    <section>
+      <div class="postcard">
+        <div class = "postcard-header">
+
+        </div>
+        <div class = "postcard-body">
+
+          <form method="POST" action="/thankyou">
+          <div class = "body-left">
+            <br>
+
+            Subject: <input type="textarea" name="subject-field" style="width:26vw"><img src="../png/camel.png" style="width:10vw; height:14vh; float:right;"/>
+            <h1> </h1><br><br>
+            Message:<br><br><textarea name="text" wrap="soft" style="width:30vw; height:25vh; resize:vertical;"> </textarea> <!--input type="text" name="message" class = "msg-box" style="width:30vw; height:25vw"/-->
+            <img src="../png/eif.png" style="width:12vw; height:35vh; float:right;"/>
+          </div>
+          <div class = "body-right">
+            <img src="../png/stamp1.jpg" style="width:8vw; height:16vh;float:right;"/>
+            <br><br><br>
+            <p>To:<br>GlobeNotes Team<br>Austin, TX<br></p>
+            Name: <input type="text" name="name-input"><br><br>
+            Your Email: <input type="text" name="email-input"><br><br>
+            <input type="submit" name="email-input" value="Submit postcard!" style="color: black;">
+
+
+          </div>
+
+          </form>
+
+        </div>
+        <div class = "postcard-footer"></div>
+
+      </div>
+
+    </section>
+    <footer></footer>
+
+  </body>
+
+  <script src="../js/suggestions.js"></script>
+</html>
