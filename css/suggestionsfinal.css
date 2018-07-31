@@ -1,9 +1,16 @@
 h1 {
   text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+   color: white;
 }
 
 h2 {
   text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 600;
+   font-size: 40px;
+   color: white;
 }
 
 .container {
@@ -19,11 +26,14 @@ h2 {
 
 body
 {
-  background: #7dcbd4;
+  background: #128d9b;
+  font-style: normal;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 18px;
 }
 h2 {
   font-size: 16px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 .postcard {
   background-image: url("land.jpg");
@@ -36,13 +46,25 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-45%);
   padding-left: 0%;
   padding-right: 0%;
 }
 
+p {
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+}
+
 .postcard-body{
   padding: 2%;
+
+  grid-template: none;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 72vw 50vw;
+  grid-template-rows: 94.5vh;
+
 }
 
 /* .postcard-header{
@@ -63,8 +85,8 @@ input {
   background: #a5f6ff;
   float: left;
   width: 60%;
-  height: 100%;
-  padding: 1%;
+  height: 70%;
+  padding: 1.1%;
 }
 
 img {
@@ -76,7 +98,7 @@ img {
   background: #a5f6ff;
   width: 35%;
   height: 70%;
-  padding: 1%;
+  padding: 1.1%;
 }
 
 .msg-box {
