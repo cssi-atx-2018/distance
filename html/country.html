@@ -107,10 +107,11 @@
 
 </div>
 <div class="mapsdiv" style="background-color:blue">
-<br>
-<br>
+    {% for value in photos %}
+    <img class="new_photo" src={{value}}>
+    {% endfor %}
 </div>
 </div>
 </body>
-<script src="../js/currency.js"></script>
+<script src="../js/country.js"></script>
 </html>

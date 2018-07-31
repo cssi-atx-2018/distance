@@ -38,6 +38,9 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.new_photo{
+  width:100%;
+}
 
 .info{
   flex: 1;
@@ -54,6 +57,7 @@
   width: 30%;
   height: 90vh;
   background: blue;
+  overflow-y: scroll;
 }
 
 h1 {
