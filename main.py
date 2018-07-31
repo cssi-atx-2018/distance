@@ -113,7 +113,7 @@ class Currency(webapp2.RequestHandler):
 
 class Suggestions(webapp2.RequestHandler):
     def get(self):
-        template = template_env.get_template('html/suggestions.html')
+        template = template_env.get_template('html/suggestionsfinal.html')
         self.response.write(template.render())
 class Misc(webapp2.RequestHandler):
     def get(self):
