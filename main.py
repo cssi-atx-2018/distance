@@ -115,6 +115,12 @@ class Suggestions(webapp2.RequestHandler):
     def get(self):
         template = template_env.get_template('html/suggestionsfinal.html')
         self.response.write(template.render())
+class ThankYou(webapp2.RequestHandler):
+    def post(self):
+        template = template_env.get_template('html/thankyou.html')
+        sugg_name = self.request.get("name-input")
+        dictdict = {"sugg_name":sugg_name}
+        self.response.write(template.render(dictdict))
 class Misc(webapp2.RequestHandler):
     def get(self):
         template = template_env.get_template('html/misc.html')
@@ -124,6 +130,7 @@ app = webapp2.WSGIApplication([
     ('/country_details', Countries), #Country details page
     ('/currency', Currency), #Currency converter page
     ('/suggestions', Suggestions),  #Suggestions form page
+    ('/thankyou', ThankYou),
     ('/misc', Misc),    #Miscellaneous travel info page
     ('/.*', MapPage),  #Main map page
 ], debug = True)
