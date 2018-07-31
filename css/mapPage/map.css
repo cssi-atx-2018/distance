@@ -2,7 +2,7 @@
   height: 0%;
   position: fixed;
   bottom:0px;
-  width: 100%;
+  width: 98%;
   background-color: white;
   -webkit-transition: height .3s ease;
   transition: height .3s ease;
@@ -10,6 +10,8 @@
   font-family: Helvetica;
   font-weight: lighter;
   padding-bottom: 0%;
+  overflow-y:scroll;
+  opacity: 10;
 }
 
 

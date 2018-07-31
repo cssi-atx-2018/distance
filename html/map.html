@@ -36,11 +36,14 @@
 
   <div id="sliderholder">
     <div id="slider">
-      <h7 style="text-align:center;padding-left:97%;padding-top:1%;font-size:25px;" onClick="window.location.reload()">x</h7>
-      <h3 id="country" style="margin:5px;">COUNTRY</h1>
-        <h6 id="lang" style="margin:20px;">LANGUAGE</h6>
-        <h6 id="curr"style="margin:20px;">CURRENCY</h6>
-      <p id="info" style="margin:20px;">INFO HERE</p>
+      <div style="display:flex;flex-layout:row;justify-content:space-between;">
+      <h3></h3>
+      <h3 id="country" style="margin:0;padding:0;">COUNTRY</h1>
+      <h7 style="padding-right:3%;padding-top:1%;font-size:25px;cursor:pointer" onClick="hide_element()">x</h7>
+      </div>
+        <h6 id="lang" style="margin:20px;margin-top:5px">LANGUAGE</h6>
+        <h6 id="curr"style="margin:20px;margin-top:5px">CURRENCY</h6>
+      <p id="info" style="margin:20px;margin-top:5px">INFO HERE</p>
       <form method=POST action="/country_details">
         <input type="text" name="country_name" id="country_name" style="display:none">
         <input type="submit" id="see_more" value="View full info">

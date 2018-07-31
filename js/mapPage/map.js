@@ -168,3 +168,7 @@ function switchToCountry(id){
     slider.style.height = "0%";
   }
 }
+
+function hide_element(){
+  slider.style.height = "0%";
+}
