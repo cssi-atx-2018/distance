@@ -6,6 +6,7 @@ from google.appengine.api import urlfetch
 import logging
 import jinja2
 from country import *
+from form import Suggestion
 
 #Creating variables for template loading
 template_loader = jinja2.FileSystemLoader(searchpath="./")
@@ -120,6 +121,11 @@ class ThankYou(webapp2.RequestHandler):
     def post(self):
         template = template_env.get_template('html/thankyou.html')
         sugg_name = self.request.get("name-input")
+        subj = self.request.get("subject-field")
+        email = self.request.get("email-input")
+        message = self.request.get("mesage")
+        suggest = Suggestion(name=sugg_name, email=email, subject = subj, message=message)
+        suggest.put()
         dictdict = {"sugg_name":sugg_name}
         self.response.write(template.render(dictdict))
 class Misc(webapp2.RequestHandler):

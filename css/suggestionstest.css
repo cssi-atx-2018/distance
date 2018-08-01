@@ -68,18 +68,6 @@ body
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-/* .postcard-header{
-  background: gray;
-  width: 75vw;
-  height: 15vh;
-  margin: auto;
-  position: absolute;
-  top: auto;
-  left: auto;
-  padding: 0.1%;
-
-} */
 input {
   font-size: 18px;
 }
