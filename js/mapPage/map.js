@@ -83,66 +83,66 @@ function switchToCountry(id){
   //    FR - France, DE - Germany, IN - India, IT - Italy, MX - Mexico,
   //    MA - Morocco, ES - Spain, TH - Tailand, TR - Turkey, GB - UK, US - US
   switch (id){
-    case "AU":
-      currentCountry = australia;
-      break;
-    case "AT":
-      currentCountry = austria;
-      break;
+    // case "AU":
+    //   currentCountry = australia;
+    //   break;
+    // case "AT":
+    //   currentCountry = austria;
+    //   break;
     case "BR":
       currentCountry = brazil;
       break;
-    case "CA":
-      currentCountry = canada;
-      break;
+    // case "CA":
+    //   currentCountry = canada;
+    //   break;
     case "CN":
       currentCountry = china;
       break;
     case "FR":
       currentCountry = france;
       break;
-    case "DE":
-      currentCountry = germany;
-      break;
-    case "IS":
-      currentCountry = iceland;
-      break;
-    case "IN":
-      currentCountry = india;
-      break;
+    // case "DE":
+    //   currentCountry = germany;
+    //   break;
+    // case "IS":
+    //   currentCountry = iceland;
+    //   break;
+    // case "IN":
+    //   currentCountry = india;
+    //   break;
     case "IL":
       currentCountry = israel;
       break;
-    case "IT":
-      currentCountry = italy;
-      break;
+    // case "IT":
+    //   currentCountry = italy;
+    //   break;
     case "MX":
       currentCountry = mexico;
       break;
-    case "PE":
-      currentCountry = peru;
-      break;
+    // case "PE":
+    //   currentCountry = peru;
+    //   break;
     case "ZA":
       currentCountry = south_africa;
       break;
-    case "KR":
-      currentCountry = south_korea;
-      break;
-    case "ES":
-      currentCountry = spain;
-      break;
-    case "TH":
-      currentCountry = thailand;
-      break;
-    case "TR":
-      currentCountry = turkey;
-      break;
-    case "GB":
-      currentCountry = united_kingdom;
-      break;
-    case "US":
-      currentCountry = united_states;
-      break;
+    // case "KR":
+    //   currentCountry = south_korea;
+    //   break;
+    // case "ES":
+    //   currentCountry = spain;
+    //   break;
+    // case "TH":
+    //   currentCountry = thailand;
+    //   break;
+    // case "TR":
+    //   currentCountry = turkey;
+    //   break;
+    // case "GB":
+    //   currentCountry = united_kingdom;
+    //   break;
+    // case "US":
+    //   currentCountry = united_states;
+    //   break;
     default:
       currentCountry = null;
       console.log("Country with id "+id+" is not yet supported");
