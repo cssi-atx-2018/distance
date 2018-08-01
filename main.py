@@ -22,8 +22,6 @@ class Countries(webapp2.RequestHandler):
     """ Handles calls to different countries for more info on them
     """
     def get(self):
-        self.response.write("This page is not working yet");
-    def post(self):
         template = template_env.get_template('html/country.html')
         country_name = self.request.get("country_name")
         test = return_country(country_name)
@@ -116,7 +114,7 @@ class Currency(webapp2.RequestHandler):
 
 class Suggestions(webapp2.RequestHandler):
     def get(self):
-        template = template_env.get_template('html/suggestionsfinal.html')
+        template = template_env.get_template('html/suggestionstest.html')
         self.response.write(template.render())
 class ThankYou(webapp2.RequestHandler):
     def post(self):

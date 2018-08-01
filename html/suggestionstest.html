@@ -39,15 +39,23 @@
           <form method="POST" action="/thankyou">
             <div class = "body-right">
               <table>
-                <tr>
-                  <th><p class="to-line" align="left" style="margin:0">To:</p></th>
-                  <th><img src="../png/stamp1.jpg" align="right" style="bottom:0;width:100px;"></th>
+                <table style="width:100%">
+                  <tr>
+                  <th style="width:50%;vertical-align:bottom;"><p class="to-line" align="left" style="margin:0">To:</p></th>
+                  <th style="text-align:right"><img src="../png/stamp1.jpg" align="right" style="bottom:0;width:100px;"></th>
                 </tr>
+                </table>
+                <br>
                 <tr>
                   <th><p class="to-line" align="left" style="margin:0;">GlobeNotes Team<br>Austin, TX<br></p></th>
                 </tr>
-                  <th>Name: <input type="text" name="name-input"></th>
-                  <th>Your Email: <input type="text" name="email-input"></th>
+                <tr>
+                  <th style="overflow:hidden;">Name: <input type="text" style="overflow:hidden;" name="name-input"><br></th>
+                </tr>
+                <tr>
+                  <th>Your Email: <input type="text" style="overflow:hidden;" name="email-input"></th>
+                </tr>
+                <tr>
                   <th><input type="submit" name="email-input" value="Submit postcard!" style="color: black;cursor:pointer;"></th>
                 </tr>
               </table>
