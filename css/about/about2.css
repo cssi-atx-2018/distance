@@ -30,6 +30,12 @@ h1{
   margin:0;
 }
 
+hat {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 h2{
   font-family: Helvetica;
   font-weight: lighter;
