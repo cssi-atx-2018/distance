@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/suggestionstest.css">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <title>Suggestions - GlobeNotes</title>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="map">Home</a>
+      <a href="currency">Currency</a>
+      <a href="packing">Packing List</a>
+      <a href="about">About</a>
+      <a href="suggestions">Suggestions</a>
+    </div>
+
+    <span onclick="openNav()" style="cursor:pointer;"><img src = "../png/hamburger.png" height = 42 width = 42></span>
+  </head>
+
+  <body>
+
+    <div class="main-content">
+      <h1>Send us a postcard!</h1>
+      <h2>If there are any content changes you would like us to implement to make our site more accurate and
+        more awesome, write to us below!</h2><br>
+    <header></header>
+
+    <section>
+      <div class="postcard">
+        <div class = "postcard-header">
+
+        </div>
+        <div class = "postcard-body">
+
+          <form method="POST" action="/thankyou">
+            <div class = "body-right">
+              <table>
+                <tr>
+                  <th><p class="to-line" align="left" style="margin:0">To:</p></th>
+                  <th><img src="../png/stamp1.jpg" align="right" style="bottom:0;width:100px;"></th>
+                </tr>
+                <tr>
+                  <th><p class="to-line" align="left" style="margin:0;">GlobeNotes Team<br>Austin, TX<br></p></th>
+                </tr>
+                  <th>Name: <input type="text" name="name-input"></th>
+                  <th>Your Email: <input type="text" name="email-input"></th>
+                  <th><input type="submit" name="email-input" value="Submit postcard!" style="color: black;cursor:pointer;"></th>
+                </tr>
+              </table>
+
+            </div>
+          <div class = "body-left">
+            <br>
+            <table style="margin:0;border:0;padding:0;">
+              <tr>
+                <th style="margin:0;"><p class="left-item" align="left" style="font-size:15px;margin:0;">Subject: </p></th>
+              </tr>
+              <tr>
+                <th><input class:"left-item" type="textarea" name="subject-field" style="width:26vw"></th>
+                <th><img class="left-item" src="../png/camel.png" style="height:50px;float:right;"/></th>
+              </tr>
+                <tr>
+                <th><p class="left-item" align="left" style="font-size:15px;margin:0;">Message:</p></th>
+              </tr>
+              <tr>
+                <th><textarea class="left-item" name="text" wrap="soft" style="min-width:240px; width:20vw; height:25vh; resize:vertical;"> </textarea></th>
+                <th><img class="left-item" src="../png/eif.png" id="eiffel"/></th>
+              </tr>
+          </table>
+          </div>
+
+          </form>
+
+        </div>
+        <div class = "postcard-footer"></div>
+
+      </div>
+
+    </section>
+    <footer></footer>
+
+  </body>
+
+  <script src="../js/suggestions.js"></script>
+</html>

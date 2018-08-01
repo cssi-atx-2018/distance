@@ -135,7 +135,7 @@ class About(webapp2.RequestHandler):
         self.response.write(template.render())
 class Packing(webapp2.RequestHandler):
     def get(self):
-        template = template_env.get_template('html/packing.html')
+        template = template_env.get_template('html/packinglist.html')
         self.response.write(template.render())
 app = webapp2.WSGIApplication([
     ('/country_details', Countries), #Country details page
