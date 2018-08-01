@@ -37,26 +37,28 @@ brazil = Country("Brazil", ["Portugese"], [99],
 
 france = Country("France", ["French", "Arabic", "Portugese"], [87, 4, 2],
     ["Christian","No religion", "Islam"], [51, 40, 6], ["French", "French by Acquisition", "Immigrants", "Foreigners"], [89, 4, 6, 9],
-    "", "", ["Euro", "220/240 V", ["GMT+2"]],
+    ['Meals are a very social process, and people take their time while eating together while chatting.'], ['The french language has honorifics, meaning that you speak to others differently depending on the formality and nature of the relationship. Keep in mind to use the right form of “you” in a conversation as to not disrespect who you’re talking to.',
+    'Never flaunt your wealth during a conversation.','Snapping your fingers is considered offensive.'],["Euro", "220/240 V", ["GMT+2"]],
     ["Passport Validity: Must be valid 3 months before departure", "Blank Passport Pages: at least one blank page", "Tourist Visa: Only if staying longer than 90 days.",
     "Vaccinations: None", "Currency Restrictions: ENTRY/EXIT: $10,000 euros"],
     "French Republic")
 
 mexico = Country("Mexico", ["Spanish"], [96],
     ["Roman Catholic", "Other Christian", "No religion"], [83, 10, 3], ["White/European", "Indigenous", "Black"], [47, 22, 1],
-    "", "", ["Pesos", "127 V", ["PDT", "GMT-6"]],
+    "", ['The “okay” sign is considered vulgar.','Men shouldn’t put their hands in their pockets.','Putting your hands on your hips is considered making a challenge.','Religious profanity is very offensive.'],
+    ["Pesos", "127 V", ["PDT", "GMT-6"]],
     ["Passport Validity: Must be valid at entry", "Blank Passport Pages: 1 page per stamp", "Tourist Visa: Yes, if visiting more than 180 days",
     "Vaccinations: None", "Currency Restrictions:ENTRY/EXIT: $10,000"],
     "Federal Republic")
 
-china = Country("China", ["Mandarin"], [71], 
-    ["Chinese Folk Religion", "Buddhism", "Christianity"], [73.6, 15.9, 2.5], ["Han Chinese", "Zhuang", "Hui"], [91.6, 1.2, 0.8], 
+china = Country("China", ["Mandarin"], [71],
+    ["Chinese Folk Religion", "Buddhism", "Christianity"], [73.6, 15.9, 2.5], ["Han Chinese", "Zhuang", "Hui"], [91.6, 1.2, 0.8],
     "", "", ["Yuan", "220 V", ["GMT+8"]],
     ["Passport Validity: 6 months", "Blank Passport Pages: 2 pages per stamp", "Tourist visa: Yes", "Vaccinations: None",
     "Currency Restrictions:ENTRY/EXIT: Max RMB 20,000"], "Communist Government")
 
 southafrica = Country("South Africa", ["Zulu", "Xhosa", "Afrikaans", "English", "Northern Sotho"], [22.7,16,13,10,9],
-    ["Protestant", "No religion", "Catholic"], [73.2,14.9,7.4], ["Black African", "Coloured", "White", "Indian/Asian"], [80.2,8.8,8.4,2.5], 
+    ["Protestant", "No religion", "Catholic"], [73.2,14.9,7.4], ["Black African", "Coloured", "White", "Indian/Asian"], [80.2,8.8,8.4,2.5],
     "", "", ["Rand", "230v", "GMT+2"],
     ["Passport Validity: 30 days", "Blank Passport Pages: 2 consecutive empty pages per entry",
     "Tourist Visa: Required if visiting more than 90 days", "Vaccinations: Yellow Fever vaccine required at least 10 days before if travelling from certain countries",
