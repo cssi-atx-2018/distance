@@ -123,7 +123,7 @@ class ThankYou(webapp2.RequestHandler):
         sugg_name = self.request.get("name-input")
         subj = self.request.get("subject-field")
         email = self.request.get("email-input")
-        message = self.request.get("mesage")
+        message = self.request.get("message")
         suggest = Suggestion(name=sugg_name, email=email, subject = subj, message=message)
         suggest.put()
         dictdict = {"sugg_name":sugg_name}
