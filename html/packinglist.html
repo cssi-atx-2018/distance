@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/suggestionsfinal.css">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <title>Suggestions - GlobeNotes</title>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="map">Home</a>
+      <a href="currency">Currency</a>
+      <a href="packing">Packing List</a>
+      <a href="about">About</a>
+      <a href="suggestions">Suggestions</a>
+    </div>
+
+    <span onclick="openNav()" style="cursor:pointer"><img src = "../png/hamburger.png" height = 42 width = 42></span>
+
+    <h1> Packing List </h1>
+
+  </head>
+
+  <body>
+    <div class = "container">
+
+      <div id = "left">
+        <h2>Check any that apply to your trip.</h2>
+        <form>
+          <input type="checkbox" name="Kids" value="kids"> Kids<br>
+          <input type="checkbox" name="Medical Needs" value="meds"> Medical Needs<br>
+          <input type="checkbox" name="Cold Weather" value="cold"> Cold Weather<br>
+          <input type="checkbox" name="Warm Weather" value="warm"> Warm Weather<br>
+
+        </form>
+      </div>
+
+      <div id = "right">
+          <div class = "general">
+            <form>
+              <h2> Key Documents/Necessities </h2>
+              <input type="checkbox"> Passports/Visas <br>
+              <input type="checkbox"> Boarding Pass <br>
+              <input type="checkbox"> Converters and Adapters <br>
+              <input type="checkbox"> Apps to Assist With Travel/Language <br>
+              <input type="checkbox"> Copies of All Your Documents <br>
+              <input type="checkbox"> Pen For Landing Forms/Customs <br>
+              <input type="checkbox"> Cash/Credit Cards <br>
+              <input type="checkbox"> Identification <br>
+              <input type="checkbox"> Insurance Documents <br>
+              <input type="checkbox"> Vaccine Certificates <br>
+
+            </form>
+          </div>
+
+          <!-- <div class = "kids">
+
+          </div>
+
+          <div class = "cold">
+
+          </div>
+
+          <div class = "warm">
+
+          </div> -->
+      </div>
+
+    </div>
+
+  </body>
+
+
+<script src="../js/packinglist.js"></script>
+</html>

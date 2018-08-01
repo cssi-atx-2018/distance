@@ -1,6 +1,6 @@
 .big-div-energy{
   display: flex;
-  grid-template-rows: 22vh 0.5vh 22vh 0.5vh 22vh;
+  grid-template-rows: 22vh 0.5vh 22vh;
   grid-template-columns: 12vw 12vw;
   grid-gap: 0.7%;
   min-width: 300px;
@@ -38,6 +38,9 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.new_photo{
+  width:100%;
+}
 
 .info{
   flex: 1;
@@ -54,6 +57,7 @@
   width: 30%;
   height: 90vh;
   background: blue;
+  overflow-y: scroll;
 }
 
 h1 {

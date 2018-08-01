@@ -12,12 +12,13 @@
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="map">Home</a>
-      <a href="#">About</a>
       <a href="currency">Currency</a>
+      <a href="packing">Packing List</a>
+      <a href="about">About</a>
       <a href="suggestions">Suggestions</a>
     </div>
 
-    <span onclick="openNav()"><img src = "../png/hamburger.png" height = 42 width = 42></span>
+    <span onclick="openNav()" style="cursor:pointer;"><img src = "../png/hamburger.png" height = 42 width = 42></span>
   </head>
 
   <body>
@@ -25,7 +26,7 @@
     <div class="main-content">
       <h1>Send us a postcard!</h1>
       <h2>If there are any content changes you would like us to implement to make our site more accurate and
-        even more awesome, just write to us below!</h2><br>
+        more awesome, write to us below!</h2><br>
     <header></header>
 
     <section>
@@ -36,23 +37,23 @@
         <div class = "postcard-body">
 
           <form method="POST" action="/thankyou">
+            <div class = "body-right">
+              <img src="../png/stamp1.jpg" style="width:8vw;float:right;"/>
+              <br>
+              <p>To:<br>GlobeNotes Team<br>Austin, TX<br></p>
+              Name: <input type="text" name="name-input"><br><br>
+              Your Email: <input type="text" name="email-input"><br><br>
+              <input type="submit" name="email-input" value="Submit postcard!" style="color: black;cursor:pointer;">
+              <br><br><br>
+
+            </div>
           <div class = "body-left">
             <br>
 
-            Subject: <input type="textarea" name="subject-field" style="width:26vw"><img src="../png/camel.png" style="width:10vw; height:14vh; float:right;"/>
-            <h1> </h1><br><br>
-            Message:<br><br><textarea name="text" wrap="soft" style="width:30vw; height:25vh; resize:vertical;"> </textarea> <!--input type="text" name="message" class = "msg-box" style="width:30vw; height:25vw"/-->
-            <img src="../png/eif.png" style="width:12vw; height:35vh; float:right;"/>
-          </div>
-          <div class = "body-right">
-            <img src="../png/stamp1.jpg" style="width:8vw; height:16vh;float:right;"/>
-            <br><br><br>
-            <p>To:<br>GlobeNotes Team<br>Austin, TX<br></p>
-            Name: <input type="text" name="name-input"><br><br>
-            Your Email: <input type="text" name="email-input"><br><br>
-            <input type="submit" name="email-input" value="Submit postcard!" style="color: black;">
-
-
+            Subject: <input type="textarea" name="subject-field" style="width:26vw"><img src="../png/camel.png" style="width:100px;float:right;"/>
+            <br><br>
+            Message:<br><br><textarea name="text" wrap="soft" style="min-width:240px; width:20vw; height:25vh; resize:vertical;"> </textarea>
+            <img src="../png/eif.png" id="eiffel"/>
           </div>
 
           </form>

@@ -8,12 +8,13 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="map">Home</a>
-    <a href="#">About</a>
     <a href="currency">Currency</a>
+    <a href="packing">Packing List</a>
+    <a href="about">About</a>
     <a href="suggestions">Suggestions</a>
   </div>
 
-  <span onclick="openNav()"><img src = "../png/hamburger.png" height = 42 width = 42></span>
+  <span onclick="openNav()" style="cursor:pointer;"><img src = "../png/hamburger.png" height = 42 width = 42></span>
 
 </head>
 
@@ -106,10 +107,11 @@
 
 </div>
 <div class="mapsdiv" style="background-color:blue">
-<br>
-<br>
+    {% for value in photos %}
+    <img class="new_photo" src={{value}}>
+    {% endfor %}
 </div>
 </div>
 </body>
-<script src="../country.js"></script>
+<script src="../js/country.js"></script>
 </html>
