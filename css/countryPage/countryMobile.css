@@ -1,0 +1,247 @@
+.big-div-energy{
+  display: flex;
+  grid-template-rows: 22vh 0.5vh 22vh;
+  grid-template-columns: 12vw 12vw;
+  grid-gap: 0.7%;
+  min-width: 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.left{
+  width:94%;
+}
+.right{
+  width:94%;
+}
+.big-div-energy2{
+  display: flex;
+  grid-template-rows: 22vh 0.5vh 22vh;
+  grid-template-columns: 12vw 12vw;
+  grid-gap: 0.7%;
+  min-width: 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.for-row-layout{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.biggestdiv{
+  display: grid;
+  grid-template-columns: 35% 35%;
+  grid-gap: 3%;
+  margin: 0;
+  width: 80vw;
+  font-size: 15px;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.new_photo{
+  width:100%;
+}
+
+.info{
+  flex: 1;
+  background: #989898;
+  color: white;
+  padding: 1%;
+  text-align: center;
+  min-width: 138px;
+  min-height: 151px;
+  margin: 5px;
+}
+.mapsdiv{
+  margin-right:1px;
+  width: 100vw;
+  height: 50vh;
+  overflow-x: scroll;
+  display:flex;
+  flex-direction: row;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: 40px;
+   font-weight: 500;
+   color: black;
+}
+
+.bigtext{
+  color: white;
+
+}
+
+h2 {
+  text-align: left;
+  font-family: "Helvetica";
+  font-weight: lighter;
+   font-weight: 400;
+   font-size: 40px;
+   color: black;
+}
+
+.container {
+   display: grid;
+   grid-gap: 25px;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 1fr;
+   margin: 40px;
+   margin-top: 50px;
+   justify-content: center;
+   /* background-color: gray; */
+ }
+
+body
+{
+  background: #7dcbd4;
+  font-style: normal;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 18px;
+}
+h2 {
+  font-size: 16px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.postcard {
+  background-image: url("../png/land.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 30px;
+  width: 75vw;
+  height: 75vh;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-45%);
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+p {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.postcard-body{
+  padding: 2%;
+
+  grid-template: none;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 72vw 50vw;
+  grid-template-rows: 94.5vh;
+
+}
+
+/* .postcard-header{
+  background: gray;
+  width: 75vw;
+  height: 15vh;
+  margin: auto;
+  position: absolute;
+  top: auto;
+  left: auto;
+  padding: 0.1%;
+} */
+input {
+  font-size: 18px;
+}
+/* .left {
+  background: #a5f6ff;
+  float: left;
+  width: 50%;
+  height: 70%;
+  padding: 1.1%;
+} */
+
+
+/* .right {
+  float: right;
+  background: #a5f6ff;
+  width: 30%;
+  height: 70%;
+  padding: 1.1%;
+} */
+
+.msg-box {
+  width: 80vw;
+}
+
+.links {
+  width: 75vw;
+  height: 75vh;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-42%);
+  padding-left: 0%;
+  padding-right: 0%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+a {
+  color: white;
+  font-style: normal;
+}
+
+a:visited {
+  color: #a5f6ff;
+  font-style: normal;
+}
+
+a:hover {
+  color: #00efe7;
+  font-style: normal;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    color: black;
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

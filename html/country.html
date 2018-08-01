@@ -3,7 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="../css/countryPage/country.css">
+  <link rel="stylesheet" media="screen and (min-device-width: 450px)" href="../css/countryPage/country.css" />
+  <link rel="stylesheet" media="screen and (max-device-width: 449px)" href="../css/countryPage/countryMobile.css" />
+
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -21,6 +23,11 @@
 <body>
   <h1>{{name}}</h1>
   <div class="for-row-layout">
+    <div class="mapsdiv">
+        {% for value in photos %}
+        <img class="new_photo" src={{value}}>
+        {% endfor %}
+    </div>
 <div class="biggestdiv">
 <div class="left">
   <h2>General Country Info</h2>
@@ -66,10 +73,6 @@
     {% endfor %}
   </div>
 
-  <div class="info">
-    <p class="bigtext">More Stuff:</p>
-  </div>
-
 </div>
 </div> <!-- end left-->
 
@@ -105,11 +108,6 @@
 </div>
 </div> <!-- end right-->
 
-</div>
-<div class="mapsdiv">
-    {% for value in photos %}
-    <img class="new_photo" src={{value}}>
-    {% endfor %}
 </div>
 </div>
 </body>
