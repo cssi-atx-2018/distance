@@ -50,7 +50,7 @@
 .company-sections h3 {
     font-size: 40px;
     font-weight: 700;
-    margin: 40px 0;
+    margin: 0;
     font-family: 'Actor', sans-serif;
     text-transform: capitalize;
 }
@@ -72,10 +72,6 @@
 }
 .marginTop40 {
     margin-top: 40px !important;
-}
-.ct-u-paddingBoth100 {
-    padding: 100px 15px;
-
 }
 .culture-section {
     /* background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(https://www.solodev.com/assets/culture.jpg) top no-repeat; */
