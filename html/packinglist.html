@@ -30,10 +30,10 @@
       <div id = "left">
         <h2>Check any that apply to your trip.</h2>
         <form>
-          <input type="checkbox" name="Kids" value="kids"> Kids<br>
-          <input type="checkbox" name="Medical Needs" value="meds"> Medical Needs<br>
-          <input type="checkbox" name="Cold Weather" value="cold"> Cold Weather<br>
-          <input type="checkbox" name="Warm Weather" value="warm"> Warm Weather<br>
+          <input type="checkbox" name="Kids" value="kids" id = "kidsbox" onclick="myFunction ()"> Kids<br>
+          <input type="checkbox" name="Medical Needs" value="meds" id = "medbox" onclick="myFunction1 ()"> Medical Needs<br>
+          <input type="checkbox" name="Cold Weather" value="cold" id = "coldbox" onclick="myFunction2 ()"> Cold Weather<br>
+          <input type="checkbox" name="Warm Weather" value="warm" id = "warmbox" onclick="myFunction3 ()"> Warm Weather<br>
 
         </form>
       </div>
@@ -101,6 +101,60 @@
               <input type = "checkbox"> Conditioner <br>
               </form>
 
+          </div>
+
+          <div id = "kids" style="display:none">
+            <form>
+            <h2> <b> Travelling with Kids </b> </h2>
+            <input type = "checkbox"> Diaper Bag <br>
+            <input type = "checkbox"> Bottles <br>
+            <input type = "checkbox"> Toys/Books <br>
+            <input type = "checkbox"> Travel Stroller <br>
+            <input type = "checkbox"> Baby Food <br>
+            <input type = "checkbox"> Baby Wipes <br>
+            <input type = "checkbox"> Pacifier <br>
+            <input type = "checkbox"> Favorite Blankets or Toys <br>
+            <input type = "checkbox"> Extra Clothes <br>
+            </form>
+          </div>
+
+          <div id = "meds" style="display:none">
+            <form>
+            <h2> <b> Travelling with Medical Needs </b> </h2>
+            <input type = "checkbox"> Medicines <br>
+            <input type = "checkbox"> Any Documentation for TSA (if needed) <br>
+            </form>
+          </div>
+
+          <div id = "summer" style="display:none">
+            <form>
+            <h2> <b> Travelling in Summer </b> </h2>
+            <input type = "checkbox"> Sunglasses <br>
+            <input type = "checkbox"> Sunscreen <br>
+            <input type = "checkbox"> Swimsuit <br>
+            <input type = "checkbox"> Lightweight Rain Jacket <br>
+            <input type = "checkbox"> Sandals <br>
+            <input type = "checkbox"> Insect Repellant <br>
+
+            </form>
+          </div>
+
+          <div id = "winter" style="display:none">
+            <form>
+            <h2> <b> Travelling in Winter </b> </h2>
+            <input type = "checkbox"> Winter Jacket <br>
+            <input type = "checkbox"> Sweaters <br>
+            <input type = "checkbox"> Fleece <br>
+            <input type = "checkbox"> Thick Socks <br>
+            <input type = "checkbox"> Snow Boots <br>
+            <input type = "checkbox"> Thermal Leggings <br>
+            <input type = "checkbox"> Thermal Top <br>
+            <input type = "checkbox"> Gloves <br>
+            <input type = "checkbox"> Hat <br>
+            <input type = "checkbox"> Scarves <br>
+            <input type = "checkbox"> Light Layering Jacket <br>
+
+            </form>
           </div>
 
           <!-- <div class = "kids">
