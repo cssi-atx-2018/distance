@@ -41,28 +41,29 @@ france = Country("France", ["French", "Arabic", "Portugese"], [87, 4, 2],
     "", "", ["Euro", "220/240 V", ["GMT+2"]],
     ["Passport Validity: Must be valid 3 months before departure", "Blank Passport Pages: at least one blank page", "Tourist Visa: Only if staying longer than 90 days.",
     "Vaccinations: None", "Currency Restrictions: ENTRY/EXIT: $10,000 euros"],
-    "French Republic")
+    "French Republic", ["../png/france1.png", "../png/france2.png", "../png/france3.png", "../png/france4.png", "../png/france5.png", "../png/france6.png"])
 
 mexico = Country("Mexico", ["Spanish"], [96],
     ["Roman Catholic", "Other Christian", "No religion"], [83, 10, 3], ["White/European", "Indigenous", "Black"], [47, 22, 1],
     "", "", ["Pesos", "127 V", ["PDT", "GMT-6"]],
     ["Passport Validity: Must be valid at entry", "Blank Passport Pages: 1 page per stamp", "Tourist Visa: Yes, if visiting more than 180 days",
     "Vaccinations: None", "Currency Restrictions:ENTRY/EXIT: $10,000"],
-    "Federal Republic")
+    "Federal Republic", ["../png/mexico1.JPEG", "../png/mexico2.JPEG", "../png/mexico3.JPEG", "../png/mexico4.JPEG", "../png/mexico5.JPEG", "../png/mexico6.JPEG"])
 
 china = Country("China", ["Mandarin"], [71],
     ["Chinese Folk Religion", "Buddhism", "Christianity"], [73.6, 15.9, 2.5], ["Han Chinese", "Zhuang", "Hui"], [91.6, 1.2, 0.8],
     "", "", ["Yuan", "220 V", ["GMT+8"]],
     ["Passport Validity: 6 months", "Blank Passport Pages: 2 pages per stamp", "Tourist visa: Yes", "Vaccinations: None",
-    "Currency Restrictions:ENTRY/EXIT: Max RMB 20,000"], "Communist Government",["../png/china1.JPEG", "../png/china2.JPEG", "../png/china3.JPEG", "../png/china4.JPEG", "../png/china5.JPEG", "../png/china6.JPEG"])
+    "Currency Restrictions:ENTRY/EXIT: Max RMB 20,000"],
+    "Communist Government", ["../png/china1.JPEG", "../png/china2.JPEG", "../png/china3.JPEG", "../png/china4.JPEG", "../png/china5.JPEG", "../png/china6.JPEG"])
 
 southafrica = Country("South Africa", ["Zulu", "Xhosa", "Afrikaans", "English", "Northern Sotho"], [22.7,16,13,10,9],
     ["Protestant", "No religion", "Catholic"], [73.2,14.9,7.4], ["Black African", "Coloured", "White", "Indian/Asian"], [80.2,8.8,8.4,2.5],
-    "", "", ["Rand", "230v", "GMT+2"],
+    "", "", ["Rand", "230v", ["GMT+2"]],
     ["Passport Validity: 30 days", "Blank Passport Pages: 2 consecutive empty pages per entry",
     "Tourist Visa: Required if visiting more than 90 days", "Vaccinations: Yellow Fever vaccine required at least 10 days before if travelling from certain countries",
     "Currency restrictions: ENTRY: ZAR 25,000; Foreign currency unlimited if declared; No Kruger coins. Exit: ZAR 25,000; Foreign currency unlimited if amount was declared on entry; Up to 15 Kruger coins if proof purchased with foreign currency"],
-    "Parliamentary Democracy")
+    "Parliamentary Democracy", ["../png/southafrica1.png", "../png/southafrica2.png", "../png/southafrica3.png", "../png/southafrica4.png", "../png/southafrica5.png", "../png/southafrica6.png"])
 
 
 def return_country(name):

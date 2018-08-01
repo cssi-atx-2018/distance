@@ -10,7 +10,13 @@ h2 {
   font-weight: lighter;
    font-size: 20px;
    color: black;
+   padding-left: 10%;
+   padding-right: 10%;
 }
+#eiffel{
+  width: 100px;
+}
+
 
 .container {
    display: grid;
@@ -53,13 +59,16 @@ p {
 }
 
 .postcard-body{
-  padding-top: 10%;
+  padding-top: 150px;
 
   grid-template: none;
-  display: grid;
+  /* display: grid; */
   grid-gap: 25px;
   grid-template-columns: 72vw 50vw;
   grid-template-rows: 94.5vh;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 
@@ -81,8 +90,10 @@ input {
   background: white;
   float: left;
   width: 60%;
-  height: 70%;
+  height: 300px;
   padding: 1.1%;
+  min-width: 300px;
+  min-height:380px;
 }
 
 
@@ -91,8 +102,9 @@ input {
   float: right;
   background: white;
   width: 35%;
-  height: 70%;
+  height: 300px;
   padding: 1.1%;
+  min-height: 380px;
 }
 
 .msg-box {
