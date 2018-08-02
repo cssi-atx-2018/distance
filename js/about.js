@@ -9,11 +9,14 @@ function closeNav() {
 }
 
 var bools = [false, false, false, false];
+var vidHtml = '<iframe width="533" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+var vidDiv = document.getElementById("video");
 
 function checkBools(){
   if (bools[0] && bools[1] && bools[2] && bools[3]){
+    vidDiv.innerHTML = vidHtml;
     console.log("You found them all!");
-    window.open('https://youtu.be/dQw4w9WgXcQ', '_blank');
+    //window.open('https://youtu.be/dQw4w9WgXcQ', '_blank');
   }
   else if (bools[0] || bools[1] || bools[2] || bools[3]) {
     console.log("Keep going, try to change all four photos!");
