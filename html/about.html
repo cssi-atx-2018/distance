@@ -4,6 +4,8 @@
   <title>About Us - GlobeNotes</title>
   <link rel="shortcut icon" type="image/png" href="../icons/favicon-16x16.png">
 </head>
+
+<body>
 <div id="mySidenav" class="sidenav">
   <img src="../png/logo.png" onclick="imgChange('ny')" style="margin-left:30px;width:120px;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -22,43 +24,43 @@
   <h1 onclick="imgChange('lan')"> About Us </h1>
   <img href = ""
   <div id = "about">
-  <h2 style="margin-left:10%;margin-right:10%;"> We are Team Distance. Our team is based in Austin, Texas and consists of four
-    college students. We decided on naming our team Distance because we all
-    go to school in different states and the application looks at countries
-    all over the world.
+  <h2 style="margin-left:10%;margin-right:10%;"> Our team is based in Austin, Texas and consists of four college students,introduced to each other through Google’s Computer Science Summer Institute
+    at their Austin Headquarters. We decided on the team name Distance because we will be attending school in different states and even countries, and
+    also because our application explores places around the world. We are a very diverse team and wanted to create an application that could further our
+    knowledge of different nations and cultures, which introduced the idea of Globe Notes. We hope that you enjoy our product and learn something new.
   </div>
   <br> <br>
-  <img src = "html/google.jpg" width=800px height=500px>
-  <br> <br>
-  <div class="grid-container">
-  <div class="grid-item">Aishani Sil</div>
-  <div class="grid-item" onclick="imgChange('ak')">Akshara Anand</div>
-  <div class="grid-item">Lance Cook</div>
-  <div class="grid-item">Nyah Way</div>
+
+  <img src = "html/google.jpg" style="width:80%">  <img src = "../png/colleges.jpg" style="width:80%">
 </div>
 
-<div class="grid-container">
-<div class="grid-item"><img src="../png/aishani.jpg" id="aish" width=300px height=310px></div>
-<div class="grid-item"><img src="../png/akshara.jpg" id= "ak" width=300px height=310px></div>
-<div class="grid-item"><img src="../png/lance.jpg" id="lan" width=300px height=310px></div>
-<div class="grid-item"><img src="../png/nyah.jpg" id="ny" width=300px height=310px></div>
+<div class="big-flex" style="display:flex; flex-direction:row;flex-wrap:wrap; justify-content:space-around;">
+
+  <div class="flex-item">
+  <div class="item">Aishani Sil</div>
+      <div class="item"><img src="../png/aishani.jpg" id="aish" width=300px height=310px></div>
+      <div class="item">Aishani Sil is a freshman at UC Berkeley interested in computer science and data science. In her free time, she enjoys making art, reading, and traveling (on a budget, using Google Street View). The picture on her bio is fake, <hat onclick="imgChange('aish')">this</hat> is what she actually looks like. </div>
+    </div>
+    <div class="flex-item">
+    <div class="item" onclick="imgChange('ak')">Akshara Anand</div>
+      <div class="item"><img src="../png/akshara.jpg" id= "ak" width=300px height=310px></div>
+      <div class="item">Akshara Anand is a freshman at Duke University interested in the intersections of computer science, statistics, and business. In her free time, she enjoys exploring the outdoors, listening to podcasts, rewatching Gilmore Girls, reading, and spending time with friends and family.</div>
+    </div>
+    <div class="flex-item">
+
+      <div class="item">Lance Cook</div>
+      <div class="item"><img src="../png/lance.jpg" id="lan" width=300px height=310px></div>
+      <div class="item">Lance Cook is a freshman at Texas A&M University interested in UX Design, Marketing, and Telecommunications. In his free time, he enjoys photography, videography, watching and playing sports, and spending time with his family.<br>You can click <hat onclick="document.getElementById('lan').src='../png/contact.JPG'">here</hat> to connect!</div>
+
+    </div>
+    <div class="flex-item">
+
+      <div class="item">Nyah Way</div>
+      <div class="item"><img src="../png/nyah.jpg" id="ny" width=300px height=310px></div>
+      <div class="item">Nyah Way is starting her first year of university at the University of Toronto in Canada and will be majoring in computer science. When she isn’t wearing a hoodie typing at a computer in a dark room, Nyah enjoys volunteering, photography, and spending time with her sisters.</div>
+    </div>
 </div>
 
-<div class="grid-container">
-<div class="grid-item">Aishani Sil is a freshman at UC Berkeley interested in computer science and data science. In her free time, she enjoys making art, reading, and traveling (on a budget, using Google Street View). The picture on her bio is fake, <hat onclick="imgChange('aish')">this</hat> is what she actually looks like. </div>
-<div class="grid-item">Akshara Anand is a freshman at Duke University interested in the intersections of computer science, statistics, and business. In her free time, she enjoys exploring the outdoors, listening to podcasts, rewatching Gilmore Girls, reading, and spending time with friends and family.</div>
-<div class="grid-item">Lance Cook is a freshman at Texas A&M University interested in UX Design, Marketing, and Telecommunications. In his free time he enjoys photography, videography, watching and playing sports, going on hikes, and spending time with his family. Thanks and Gig ‘em</div>
-<div class="grid-item">Nyah Way is starting her first year of university at the University of Toronto in Canada and will be majoring in computer science. When she isn’t wearing a hoodie typing away at a computer in a dark room, Nyah enjoys volunteering, photography, and spending time with her two sisters.</div>
-</div>
-
-</head>
-
-
-
-
-
-
-
-</main>
+</body>
 <script src="../js/about.js"></script>
 </html>
