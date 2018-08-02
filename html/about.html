@@ -4,7 +4,7 @@
   <title>About Us - GlobeNotes</title>
 </head>
 <div id="mySidenav" class="sidenav">
-  <img src="../png/logo.png" style="margin-left:30px;width:120px;">
+  <img src="../png/logo.png" onclick="imgChange('ny')" style="margin-left:30px;width:120px;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="map">Home</a>
   <a href="currency">Currency</a>
@@ -18,10 +18,10 @@
 <link rel="stylesheet" type="text/css" href="../css/about/about2.css">
 <link rel="shortcut icon" href="../png/logo_bpz_icon.ico" />
 <head>
-  <h1> About Us </h1>
+  <h1 onclick="imgChange('lan')"> About Us </h1>
   <img href = ""
   <div id = "about">
-  <h2> We are Team Distance. Our team is based in Austin, Texas and consists of four
+  <h2 style="margin-left:10%;margin-right:10%;"> We are Team Distance. Our team is based in Austin, Texas and consists of four
     college students. We decided on naming our team Distance because we all
     go to school in different states and the application looks at countries
     all over the world.
@@ -31,20 +31,20 @@
   <br> <br>
   <div class="grid-container">
   <div class="grid-item">Aishani Sil</div>
-  <div class="grid-item">Akshara Anand</div>
+  <div class="grid-item" onclick="imgChange('ak')">Akshara Anand</div>
   <div class="grid-item">Lance Cook</div>
   <div class="grid-item">Nyah Way</div>
 </div>
 
 <div class="grid-container">
-<div class="grid-item"><img src="/html/aishani.jpg" id="aish" width=300px height=310px></div>
-<div class="grid-item"><img src="/html/akshara.jpg" width=300px height=310px></div>
-<div class="grid-item"><img src="/html/lance.jpg" width=300px height=310px></div>
-<div class="grid-item"><img src="/html/nyah.jpg" width=300px height=310px></div>
+<div class="grid-item"><img src="../png/aishani.jpg" id="aish" width=300px height=310px></div>
+<div class="grid-item"><img src="../png/akshara.jpg" id= "ak" width=300px height=310px></div>
+<div class="grid-item"><img src="../png/lance.jpg" id="lan" width=300px height=310px></div>
+<div class="grid-item"><img src="../png/nyah.jpg" id="ny" width=300px height=310px></div>
 </div>
 
 <div class="grid-container">
-<div class="grid-item">Aishani Sil is a freshman at UC Berkeley interested in computer science and data science. In her free time, she enjoys making art, reading, and traveling (on a budget, using Google Street View). The picture on her bio is fake, <hat onclick="document.getElementById('aish').src='../png/aishani.JPG'">this</hat>  this is what she actually looks like. </div>
+<div class="grid-item">Aishani Sil is a freshman at UC Berkeley interested in computer science and data science. In her free time, she enjoys making art, reading, and traveling (on a budget, using Google Street View). The picture on her bio is fake, <hat onclick="imgChange('aish')">this</hat> is what she actually looks like. </div>
 <div class="grid-item">Akshara Anand is a freshman at Duke University interested in the intersections of computer science, statistics, and business. In her free time, she enjoys exploring the outdoors, listening to podcasts, rewatching Gilmore Girls, reading, and spending time with friends and family.</div>
 <div class="grid-item">Lance Cook is a freshman at Texas A&M University interested in UX Design, Marketing, and Telecommunications. In his free time he enjoys photography, videography, watching and playing sports, going on hikes, and spending time with his family. Thanks and Gig ‘em</div>
 <div class="grid-item">Nyah Way is starting her first year of university at the University of Toronto in Canada and will be majoring in computer science. When she isn’t wearing a hoodie typing away at a computer in a dark room, Nyah enjoys volunteering, photography, and spending time with her two sisters.</div>
