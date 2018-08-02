@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/packinglist.css">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <title>Packing List - GlobeNotes</title>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="../png/logo.png" style="margin-left:30px;width:120px;">
+      <a href="map">Home</a>
+      <a href="currency">Currency</a>
+      <a href="packing">Packing List</a>
+      <a href="about">About</a>
+      <a href="suggestions">Suggestions</a>
+    </div>
+
+    <span onclick="openNav()" style="cursor:pointer"><img src = "../png/hamburger.png" height = 42 width = 42></span>
+
+    <h1> Packing List </h1>
+
+  </head>
+
+  <body>
+    <div class = "container">
+
+      <div id = "left">
+        <h2>Check any that apply to your trip.</h2>
+        <form>
+          <input type="checkbox" name="Kids" value="kids" id = "kidsbox" onclick="myFunction ()"> Kids<br>
+          <input type="checkbox" name="Medical Needs" value="meds" id = "medbox" onclick="myFunction1 ()"> Medical Needs<br>
+          <input type="checkbox" name="Cold Weather" value="cold" id = "coldbox" onclick="myFunction2 ()"> Cold Weather<br>
+          <input type="checkbox" name="Warm Weather" value="warm" id = "warmbox" onclick="myFunction3 ()"> Warm Weather<br>
+
+        </form>
+      </div>
+
+      <div id = "right">
+          <div class = "general">
+            <form>
+              <h2> Key Documents/Necessities </h2>
+              <input type="checkbox"> Passports/Visas <br>
+              <input type="checkbox"> Boarding Pass <br>
+              <input type="checkbox"> Converters and Adapters <br>
+              <input type="checkbox"> Apps to Assist With Travel/Language <br>
+              <input type="checkbox"> Copies of All Your Documents <br>
+              <input type="checkbox"> Pen For Landing Forms/Customs <br>
+              <input type="checkbox"> Cash/Credit Cards <br>
+              <input type="checkbox"> Identification <br>
+              <input type="checkbox"> Insurance Documents <br>
+              <input type="checkbox"> Vaccine Certificates <br>
+              </form>
+
+              <form>
+              <h2> Tech Needs/Food </h2>
+              <input type = "checkbox"> Phone <br>
+              <input type = "checkbox"> Phone Charger <br>
+              <input type = "checkbox"> Headphones <br>
+              <input type = "checkbox"> Portable Charger <br>
+              <input type = "checkbox"> Snacks <br>
+              <input type = "checkbox"> Empty Waterbottle <br>
+              </form>
+
+              <form>
+              <h2> Clothes/Accessories </h2>
+              <input type = "checkbox"> Tops <br>
+              <input type = "checkbox"> Bottoms <br>
+              <input type = "checkbox"> Undergarments <br>
+              <input type = "checkbox"> Socks <br>
+              <input type = "checkbox"> Pajamas <br>
+              <input type = "checkbox"> Shoes <br>
+              <input type = "checkbox"> Eyeglasses/Contacts <br>
+              <input type = "checkbox"> Workout Wear <br>
+              <input type = "checkbox"> Light Jacket <br>
+              <input type = "checkbox"> Bag or Money Belt <br>
+              <input type = "checkbox"> Pair of Clothes in Carry-On <br>
+              </form>
+
+              <form>
+              <h2> Hygiene/Health </h2>
+              <input type = "checkbox"> Hairbrush <br>
+              <input type = "checkbox"> Hair Ties/Clips <br>
+              <input type = "checkbox"> Shaving Needs (check regulations) <br>
+              <input type = "checkbox"> Antibacterial Wipes <br>
+              <input type = "checkbox"> Medicine <br>
+              <input type = "checkbox"> Hand Sanitizer <br>
+              <input type = "checkbox"> Hygiene Products <br>
+              <input type = "checkbox"> Toothbrush and Toothpaste <br>
+              <input type = "checkbox"> Floss <br>
+              <input type = "checkbox"> Body/Face Wash <br>
+              <input type = "checkbox"> Makeup <br>
+              <input type = "checkbox"> Makeup Remover Wipes <br>
+              <input type = "checkbox"> Deodorant <br>
+              <input type = "checkbox"> Moisturizer <br>
+              <input type = "checkbox"> Airsickness Tablets <br>
+              <input type = "checkbox"> Lip Balm <br>
+              <input type = "checkbox"> Shampoo <br>
+              <input type = "checkbox"> Conditioner <br>
+              </form>
+
+          </div>
+
+          <div id = "kids" style="display:none">
+            <form>
+            <h2> <b> Travelling with Kids </b> </h2>
+            <input type = "checkbox"> Diaper Bag <br>
+            <input type = "checkbox"> Bottles <br>
+            <input type = "checkbox"> Toys/Books <br>
+            <input type = "checkbox"> Travel Stroller <br>
+            <input type = "checkbox"> Baby Food <br>
+            <input type = "checkbox"> Baby Wipes <br>
+            <input type = "checkbox"> Pacifier <br>
+            <input type = "checkbox"> Favorite Blankets or Toys <br>
+            <input type = "checkbox"> Extra Clothes <br>
+            </form>
+          </div>
+
+          <div id = "meds" style="display:none">
+            <form>
+            <h2> <b> Travelling with Medical Needs </b> </h2>
+            <input type = "checkbox"> Medicines <br>
+            <input type = "checkbox"> Any Documentation for TSA (if needed) <br>
+            </form>
+          </div>
+
+          <div id = "summer" style="display:none">
+            <form>
+            <h2> <b> Travelling in Summer </b> </h2>
+            <input type = "checkbox"> Sunglasses <br>
+            <input type = "checkbox"> Sunscreen <br>
+            <input type = "checkbox"> Swimsuit <br>
+            <input type = "checkbox"> Lightweight Rain Jacket <br>
+            <input type = "checkbox"> Sandals <br>
+            <input type = "checkbox"> Insect Repellant <br>
+
+            </form>
+          </div>
+
+          <div id = "winter" style="display:none">
+            <form>
+            <h2> <b> Travelling in Winter </b> </h2>
+            <input type = "checkbox"> Winter Jacket <br>
+            <input type = "checkbox"> Sweaters <br>
+            <input type = "checkbox"> Fleece <br>
+            <input type = "checkbox"> Thick Socks <br>
+            <input type = "checkbox"> Snow Boots <br>
+            <input type = "checkbox"> Thermal Leggings <br>
+            <input type = "checkbox"> Thermal Top <br>
+            <input type = "checkbox"> Gloves <br>
+            <input type = "checkbox"> Hat <br>
+            <input type = "checkbox"> Scarves <br>
+            <input type = "checkbox"> Light Layering Jacket <br>
+
+            </form>
+          </div>
+
+          <!-- <div class = "kids">
+
+          </div>
+
+          <div class = "cold">
+
+          </div>
+
+          <div class = "warm">
+
+          </div> -->
+      </div>
+
+    </div>
+
+  </body>
+
+
+<script src="../js/packinglist.js"></script>
+</html>

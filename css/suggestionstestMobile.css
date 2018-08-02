@@ -1,0 +1,170 @@
+h1 {
+  text-align: center;
+  font-family: 'Actor', sans-serif;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: lighter;
+   font-size: 20px;
+   color: black;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+#eiffel{
+  height: 100px;
+}
+
+
+.container {
+   display: grid;
+   grid-gap: 25px;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 1fr;
+   margin: 40px;
+   margin-top: 50px;
+   justify-content: center;
+   /* background-color: gray; */
+ }
+
+body
+{
+  background: #7dcbd4;
+  font-style: normal;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+}
+
+.postcard {
+  background-image: url(../"postcard.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 30px;
+  width: 75vw;
+  height: 75vh;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-45%);
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.to-line {
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+}
+
+.postcard-body{
+  padding-top: 150px;
+  grid-template: none;
+  grid-gap: 25px;
+  grid-template-columns: 72vw 50vw;
+  grid-template-rows: 94.5vh;
+  display:flex;
+  flex-direction: column;
+}
+input {
+  font-size: 18px;
+}
+.body-left {
+  background: #c2d8d3;
+  width: 100%;
+  height: 300px;
+  padding: 1.1%;
+  margin-top: 5%;
+}
+
+.left-item{
+  flex:3;
+}
+
+.body-right {
+  background: #c2d8d3;
+  width: 100%;
+  height: 300px;
+  padding: 1.1%;
+  min-height: 380px;
+  min-width: 200px;
+  margin-top:2%;
+}
+
+.msg-box {
+  width: 80vw;
+}
+
+.links {
+  width: 75vw;
+  height: 75vh;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-42%);
+  padding-left: 0%;
+  padding-right: 0%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+a {
+  color: white;
+  font-style: normal;
+}
+
+a:visited {
+  color: #a5f6ff;
+  font-style: normal;
+}
+
+a:hover {
+  color: #00efe7;
+  font-style: normal;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    color: black;
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

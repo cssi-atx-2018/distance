@@ -6,6 +6,7 @@ from google.appengine.api import urlfetch
 import logging
 import jinja2
 from country import *
+from form import Suggestion
 
 #Creating variables for template loading
 template_loader = jinja2.FileSystemLoader(searchpath="./")
@@ -22,8 +23,6 @@ class Countries(webapp2.RequestHandler):
     """ Handles calls to different countries for more info on them
     """
     def get(self):
-        self.response.write("This page is not working yet");
-    def post(self):
         template = template_env.get_template('html/country.html')
         country_name = self.request.get("country_name")
         test = return_country(country_name)
@@ -116,12 +115,17 @@ class Currency(webapp2.RequestHandler):
 
 class Suggestions(webapp2.RequestHandler):
     def get(self):
-        template = template_env.get_template('html/suggestionsfinal.html')
+        template = template_env.get_template('html/suggestionstest.html')
         self.response.write(template.render())
 class ThankYou(webapp2.RequestHandler):
     def post(self):
         template = template_env.get_template('html/thankyou.html')
         sugg_name = self.request.get("name-input")
+        subj = self.request.get("subject-field")
+        email = self.request.get("email-input")
+        message = self.request.get("message")
+        suggest = Suggestion(name=sugg_name, email=email, subject = subj, message=message)
+        suggest.put()
         dictdict = {"sugg_name":sugg_name}
         self.response.write(template.render(dictdict))
 class Misc(webapp2.RequestHandler):
@@ -133,12 +137,16 @@ class About(webapp2.RequestHandler):
     def get(self):
         template = template_env.get_template('html/about.html')
         self.response.write(template.render())
-
+class Packing(webapp2.RequestHandler):
+    def get(self):
+        template = template_env.get_template('html/packinglist.html')
+        self.response.write(template.render())
 app = webapp2.WSGIApplication([
     ('/country_details', Countries), #Country details page
     ('/currency', Currency), #Currency converter page
     ('/suggestions', Suggestions),  #Suggestions form page
     ('/thankyou', ThankYou),
+    ('/packing', Packing),
     ('/misc', Misc),    #Miscellaneous travel info page
     ('/about.*', About), #page about us
     ('/.*', MapPage),  #Main map page

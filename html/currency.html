@@ -11,13 +11,15 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="../png/logo.png" style="margin-left:30px;width:120px;">
   <a href="map">Home</a>
-  <a href="#">About</a>
   <a href="currency">Currency</a>
+  <a href="packing">Packing List</a>
+  <a href="about">About</a>
   <a href="suggestions">Suggestions</a>
 </div>
 
-<span onclick="openNav()"><img src = "../png/hamburger.png" height = 42 width = 42 align="left"></span>
+<span onclick="openNav()" style="cursor:pointer;"><img src = "../png/hamburger.png" height = 42 width = 42 align="left"></span>
 
 <h1> Currency Converter </h1>
 
@@ -25,33 +27,34 @@
     <i class="fas fa-money-bill-alt"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <i class="fas fa-money-check-alt"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <i class="fas fa-money-bill-wave"></i>
+
+        <div id="currency_div" style="text-align:center;">
+          <br><br>
+        <form method=POST>
+          <select name="curr1" id="curr1">
+            {% for number, currency in currencies.items() %}
+              <option value={{number}}>{{currency}}</option>
+            {% endfor %}
+          </select>
+          <input type="number" name="amount1" id="amount1" value={{amt1}}>
+          <img src="../png/switch.png" style="cursor:pointer;" width="20px" id="switch" onclick="Switch()">
+
+          <select name="curr2" id="curr2">
+            {% for number, currency in currencies.items() %}
+              <option value={{number}}>{{currency}}</option>
+            {% endfor %}
+          </select>
+          <input type="number" name="amount2" id="amount2" value={{amt2}}><br><br>
+          <input type="submit" id="submit" value="Convert!">
+        </form>
+        <br>
+      </div>
   <div id = "info">
-  <h2> Figuring out how to convert currencies can be difficult, especially in the moment. We use the <a href = "https://fixer.io/"> Fixer API </a> with the most recent
+  <h2> Figuring out how to convert currencies can be difficult, especially in the moment. We use the <a href = "https://fixer.io/">Fixer API</a> with the most recent
     exchange rate information to make the process simple, streamlined, and fast for on-the-go travellers. To get started, pick a starting currency from the dropdown menu
   and the amount of money you would like to convert. Use the second dropdown menu to select your intended conversion currency and click "Convert!". To convert in the reverse
-order, simply click the arrow in the direction you would like to convert. <br> <br> Don't see a currency you need? Send us a <a href = "suggestionsfinal.html"> suggestion </a>
+order, simply click the arrow in the direction you would like to convert. <br> <br> Don't see a currency you need? Send us a <a href = "suggestions">suggestion</a>
 and we'll make a change. </h2>
-</div>
-
-  <div id="currency_div" style="text-align:center;">
-  <form method=POST>
-    <select name="curr1" id="curr1">
-      {% for number, currency in currencies.items() %}
-        <option value={{number}}>{{currency}}</option>
-      {% endfor %}
-    </select>
-    <input type="number" name="amount1" id="amount1" value={{amt1}}>
-    to
-    <select name="curr2" id="curr2">
-      {% for number, currency in currencies.items() %}
-        <option value={{number}}>{{currency}}</option>
-      {% endfor %}
-    </select>
-    <input type="number" name="amount2" id="amount2" value={{amt2}}><br><br>
-    <input type="submit" id="submit" value="Convert!">
-  </form>
-  <br>
-  <img src="../png/switch.png" style="cursor:pointer;" width="30px" id="switch" onclick="Switch()">
 </div>
 <div style="display:none">
   <p id="currency1">{{curr1}}</p>

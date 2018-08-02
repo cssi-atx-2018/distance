@@ -1,21 +1,26 @@
 .big-div-energy{
-display: flex;
-grid-template-rows: 22vh 0.5vh 22vh 0.5vh 22vh;
-grid-template-columns: 12vw 12vw;
-grid-gap: 0.7%;
-min-width: 300px;
-justify-content: space-around;
-flex-wrap: wrap;
+  display: flex;
+  grid-template-rows: 22vh 0.5vh 22vh;
+  grid-template-columns: 12vw 12vw;
+  grid-gap: 0.7%;
+  min-width: 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
+.left{
+  width:94%;
+}
+.right{
+  width:94%;
+}
 .big-div-energy2{
-display: flex;
-grid-template-rows: 22vh 0.5vh 22vh;
-grid-template-columns: 12vw 12vw;
-grid-gap: 0.7%;
-min-width: 300px;
-justify-content: space-around;
-flex-wrap: wrap;
+  display: flex;
+  grid-template-rows: 22vh 0.5vh 22vh;
+  grid-template-columns: 12vw 12vw;
+  grid-gap: 0.7%;
+  min-width: 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .for-row-layout{
   display:flex;
@@ -33,6 +38,9 @@ flex-wrap: wrap;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.new_photo{
+  width:100%;
+}
 
 .info{
   flex: 1;
@@ -45,11 +53,10 @@ flex-wrap: wrap;
   margin: 5px;
 }
 .mapsdiv{
-  position:absolute;
   margin-right:1px;
   width: 30%;
-  height: 90%;
-  background: blue;
+  height: 90vh;
+  overflow-y: scroll;
 }
 
 h1 {
@@ -140,7 +147,6 @@ p {
   top: auto;
   left: auto;
   padding: 0.1%;
-
 } */
 input {
   font-size: 18px;
@@ -221,6 +227,7 @@ a:hover {
     color: #818181;
     display: block;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 /* When you mouse over the navigation links, change their color */
