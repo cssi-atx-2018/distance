@@ -1,5 +1,10 @@
 
-body { background-color: #7dcbd4; color: #fff; }
+body {
+  background-color: #7dcbd4; color: #fff;
+
+}
+
+.poo {text-align: center; font-size: 20px;font-family: Helvetica; font-weight: lighter;color:#074c47;}
 #chartdiv {
   width: 60vw;
   height:80vh;
@@ -11,6 +16,7 @@ body { background-color: #7dcbd4; color: #fff; }
   margin: 5px;
   width:320px;
 }
+.poo:hover {color:lightgray;}
 
 .grid-container {
   justify-content: center;
