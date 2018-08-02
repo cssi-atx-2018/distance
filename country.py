@@ -24,7 +24,7 @@ class Country:
 
 israel = Country("Israel", ["Hebrew", "Arabic", "Russian"],[49, 18, 15],
     ["Jewish", "Muslim", "Christian"], [75, 18, 2], ["Jewish", "Arabic", "Other"], [75, 20, 5],
-    ["Very religious Jewish people of either gender do not acknowledge members of a different gender while greeting others.","Israelis are very open, so don’t be afraid to talk about topics like politics-- but expect candor in return."],
+    ["Very religious Jewish people of either gender do not acknowledge members of a different gender while greeting others.","Israelis are very open, so don\'t be afraid to talk about topics like politics-- but expect candor in return."],
     ["Israelis hate needless formality.", "nterethnic marriages, especially between Jewish and Arabic people, are frowned upon."], ["Shekel", "H type plug", ["GMT+3"]],
     ["Passport Validity: No minimum, but your stay cannot exceed validity of passport and airlines may deny boarding if your passport has less than 6 months validity.",
     "Blank Passport Pages: 1 page, normally aren\'t stamped upon entry", "Tourist Visa: Only if staying longer than 90 days", "Vaccinations: None",
@@ -57,7 +57,7 @@ mexico = Country("Mexico", ["Spanish"], [96],
 china = Country("China", ["Mandarin"], [71],
     ["Chinese Folk Religion", "Buddhism", "Christianity"], [73.6, 15.9, 2.5], ["Han Chinese", "Zhuang", "Hui"], [91.6, 1.2, 0.8],
     ["Greetings are formal and the oldest person is usually greeted first."],
-    ["Make sure to respect a Chinese person’s personal space -- they value it very much!"], ["Yuan", "220 V", ["GMT+8"]],
+    ["Make sure to respect a Chinese person\'s personal space -- they value it very much!"], ["Yuan", "220 V", ["GMT+8"]],
     ["Passport Validity: 6 months", "Blank Passport Pages: 2 pages per stamp", "Tourist visa: Yes", "Vaccinations: None",
     "Currency Restrictions:ENTRY/EXIT: Max RMB 20,000"],
     "Communist Government", ["../png/china1.JPEG", "../png/china2.JPEG", "../png/china3.JPEG", "../png/china4.JPEG", "../png/china5.JPEG", "../png/china6.JPEG"])
