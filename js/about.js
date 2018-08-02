@@ -51,6 +51,6 @@ function imgChange(id) {
       png2+="lance.jpg";
       break;
   }
-  image.src = (fake) ? png : png2 ;
+  image.src = png;//(fake) ? png : png2 ;
   checkBools();
 }
