@@ -54,7 +54,7 @@ mexico = Country("Mexico", ["Spanish"], [96],
     "Vaccinations: None", "Currency Restrictions:ENTRY/EXIT: $10,000"],
     "Federal Republic", ["../png/mexico1.JPEG", "../png/mexico2.JPEG", "../png/mexico3.JPEG", "../png/mexico4.JPEG", "../png/mexico5.JPEG", "../png/mexico6.JPEG"])
 
-china = Country("China", ["Mandarin"], [71],
+china = Country("China", ["Mandarin", "Cantonese"], [71],
     ["Chinese Folk Religion", "Buddhism", "Christianity"], [73.6, 15.9, 2.5], ["Han Chinese", "Zhuang", "Hui"], [91.6, 1.2, 0.8],
     ["Greetings are formal and the oldest person is usually greeted first."],
     ["Make sure to respect a Chinese person\'s personal space -- they value it very much!"], ["Yuan", "220 V", ["GMT+8"]],

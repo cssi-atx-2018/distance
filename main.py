@@ -27,6 +27,9 @@ class Countries(webapp2.RequestHandler):
         country_name = self.request.get("country_name")
         test = return_country(country_name)
         logging.info(str(test)+" "+str(type(test)))
+        if test == "Nope!":
+            self.response.write("We're sorry, this country is not yet supported. Please go to our homepage at globe-notes.com and use the sidebar to submit a suggestion.")
+            return
         self.response.write(template.render(test.get_info()))
 
 class Currency(webapp2.RequestHandler):

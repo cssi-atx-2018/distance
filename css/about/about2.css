@@ -9,6 +9,9 @@ body {
   width: 60vw;
   height:80vh;
 }
+ul{
+  padding-left: 10px;
+}
 
 .flex-item{
   display:flex;

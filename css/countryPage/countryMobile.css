@@ -44,10 +44,10 @@
 
 .info{
   flex: 1;
-  background: #989898;
+  background: #777777;
   color: white;
   padding: 1%;
-  text-align: center;
+  text-align: left;
   min-width: 138px;
   min-height: 151px;
   margin: 5px;
