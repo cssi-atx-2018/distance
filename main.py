@@ -33,7 +33,7 @@ class Currency(webapp2.RequestHandler):
     """ Currency convertion page, uses currency api from apilayer
         and converts number to another currency
     """
-    def getNames(self, original):
+    def getNames(self, search):
         # Our api url
         url = 'http://apilayer.net/api/list?access_key=26d090d35324a4b7dd821d34068f354d'
 
@@ -47,17 +47,29 @@ class Currency(webapp2.RequestHandler):
                 #Change result.content from string to dictuionary and get a meme dictionary
                 listDictionary = json.loads(result.content)
 
-                #Returns dictionary of currency ids and names
-                if original:
-                    return listDictionary["currencies"]
+                # #Returns dictionary of currency ids and names
+                # if original:
+                #     return listDictionary["currencies"]
                 currencies = {}
                 count = 0
-
+                countList = []
                 #Returns dictionary of values and indexes
-                for value in listDictionary["currencies"].values():
+                # for othervalue in sorted(listDictionary["currencies"].values()):
+                #     countList[count] = listDictionary["currencies"][othervalue]
+                #     count+=1
+                # count= 0
+                for value in sorted(listDictionary["currencies"].values()):
                     currencies[count] = value
                     count+=1
-                return currencies
+                if search == "0":
+                    return currencies
+                else:
+                    val = currencies[search]
+                    val2 = [key for (key, value) in listDictionary["currencies"].items() if value == val][0]
+                    #val2 = listDictionary["currencies"][val][0]
+                    #hi = sorted(currencies)
+
+                return val2
         #Catch url not found errors
         except urlfetch.Error:
             logging.exception("Caught error")
@@ -80,38 +92,38 @@ class Currency(webapp2.RequestHandler):
             with the names of each available currency
         """
         template = template_env.get_template('html/currency.html')
-        self.response.write(template.render({"currencies":self.getNames(False)}))
+        self.response.write(template.render({"currencies":self.getNames("0")}))
 
     def post(self):
         """ Converts chosen currency amount to second currency
         """
         #Get initial data
-        curr1 = self.request.get("curr1")
-        curr2 = self.request.get("curr2")
+        curr1 = int(self.request.get("curr1"))
+        curr2 = int(self.request.get("curr2"))
         amount1 = self.request.get("amount1")
-        all_currencies = self.getNames(True)
+        all_currencies = self.getNames("0")
 
         #Get names of chosen currencies
-        from1 = all_currencies.keys()[int(curr1)]
-        to1 = all_currencies.keys()[int(curr2)]
+        from1 = self.getNames(int(curr1))
+        to1 = self.getNames(int(curr2))
 
         #Get both conversion factors
         convert_currencies1 = self.getConversion()["USD"+to1]
         convert_currencies2 = self.getConversion()["USD"+from1]
         amount2 = 0
-
-        #Check that amount is valid
+        #
+        # #Check that amount is valid
         if amount1 == "" or amount1 < 0:
             amount1 = 0
         else:
             conversion = float(convert_currencies1)/float(convert_currencies2)
             amount2 = float(amount1)*conversion
         template = template_env.get_template('html/currency.html')
-
-        #Log info
+        #
+        # #Log info
         logging.info("CURRENCY INFO REQUEST from: "+from1+ " amt: "+str(amount1)+" to: "+to1+" amt: "+str(amount2))
-        #Send data to template
-        self.response.write(template.render({"currencies":self.getNames(False), "curr1":curr1, "curr2":curr2,"amt1":amount1, "amt2":amount2}))
+        # #Send data to template
+        self.response.write(template.render({"currencies":self.getNames("0"), "curr1":curr1, "curr2":curr2,"amt1":amount1, "amt2":amount2}))
 
 class Suggestions(webapp2.RequestHandler):
     def get(self):
